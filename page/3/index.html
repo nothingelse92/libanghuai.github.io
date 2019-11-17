@@ -69,6 +69,54 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/24/SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts/" class="article-date">
+  <time datetime="2018-11-24T14:47:32.000Z" itemprop="datePublished">2018-11-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/24/SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts/">SGDR: Stochastic Gradient Descent with Warm Restarts</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL: <a href="https://arxiv.org/abs/1608.03983" target="_blank" rel="noopener">https://arxiv.org/abs/1608.03983</a> Github: <a href="https://github.com/loshchil/SGDR" target="_blank" rel="noopener">https://github.com/loshchil/SGDR</a><br><strong>【Summary】</strong>ICLR2017一篇关于学习率的论文，论文的核心比较直接就是提出了基于cosine的学习率 warm restart逻辑，然后论文的大篇幅都是围绕这个learing rate进行了比较多的实验。论文所提的SGDR通常只需要原有模型1/2-1/4的训练epoch就可以得到差不多甚至更好的效果。</p>
+<p>论文所提的cosine learning rate 公式如下，n<sub>min</sub>、n<sub>max</sub>就是学习率的区间，T<sub>cur</sub>表示当前经过多少个epoch了，T<sub>i</sub>可以理解为周期。因为从下面这个公式当T<sub>cur</sub> = T<sub>i</sub>时，n<sub>t</sub> = n<sub>min</sub>：</p>
+<p><img src="SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts-c4d6e75499fcd3406791dd38969c8d52b2f59521_1_690x119.png" alt><br>作者在具体实验的时候其实还涉及到另一个参数n<sub>mult</sub>代表周期的系数，下图是不同的T<sub>i</sub>和T<sub>mult</sub>画出来的示意图：</p>
+<p><img src="SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts-d82c1f3a92421e0ca83d33a2f7b0fe29374e7d62_1_690x288.jpg" alt></p>
+<p>下图是作者在CIFAR-10和CIFAR-100数据集上用Wide Residual Neural Network（depth=28&amp;width=10）做的实验，效果很直观，SGDR收敛速度明显比较快：</p>
+<p><img src="SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts-76589c0bc925d1e5325639557cd6ecdb400389da_1_447x499.jpg" alt><br>下表是具体的实验结果，从结果上看效果也是不错的：</p>
+<p><img src="SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts-4441390556648037aa6d983e2edfb07a2a075d6a_1_629x500.png" alt><br>此外作者也从ensemble、downsampled imagenet dataset的角度做了不同的实验，结果也都很好：<br>Ensemble:</p>
+<p><img src="SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts-f2310a3f482911fcebf25cb90947d106fcf3e22a_1_690x130.png" alt><br>Downsampled imagenet dataset:</p>
+<p><img src="SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts-d308a8fb8fb5028f53e7d108006f93a5d5364a52_1_632x500.jpg" alt></p>
+<p>论文所提的这种warm restart逻辑感觉还是很合理的，可以优化梯度下降中鞍点以及局部最小解的问题，有助于模型能快速收敛。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/24/SGDR-Stochastic-Gradient-Descent-with-Warm-Restarts/" data-id="ck337ygbo004o63fy16nsi045" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Learning-Strategy/">Learning Strategy</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Unconstrained-Face-Alignment-without-Face-Detection" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/19/Unconstrained-Face-Alignment-without-Face-Detection/" class="article-date">
@@ -103,7 +151,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/19/Unconstrained-Face-Alignment-without-Face-Detection/" data-id="ck337q4i5005c1cfyvn2y5ach" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/19/Unconstrained-Face-Alignment-without-Face-Detection/" data-id="ck337ygc7005i63fyiefqb3f1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Face/">Face</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
@@ -146,7 +194,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/15/Squeeze-and-Excitation-Networks/" data-id="ck337q4hz004x1cfyl1gpl38v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/15/Squeeze-and-Excitation-Networks/" data-id="ck337ygbx005363fygoom4dml" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
@@ -190,7 +238,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/14/Face-R-CNN/" data-id="ck337q4f9001t1cfygvzrd5c2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/14/Face-R-CNN/" data-id="ck337yg99001s63fyg55n3aql" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Face/">Face</a></li></ul>
@@ -231,7 +279,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/28/Associative-Embedding-End-to-End-Learning-for-Joint-Detection-and-Grouping/" data-id="ck337q4d7000m1cfy70w0ncno" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/28/Associative-Embedding-End-to-End-Learning-for-Joint-Detection-and-Grouping/" data-id="ck337yg70000m63fyq8gc3d5i" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BottomUp/">BottomUp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KeyPoint/">KeyPoint</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
@@ -275,7 +323,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/22/SNIPER-Efficient-Multi-Scale-Training/" data-id="ck337q4hv004n1cfyyqhehuhq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/22/SNIPER-Efficient-Multi-Scale-Training/" data-id="ck337ygbn004m63fy370y3tyy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
@@ -321,7 +369,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/14/RMPE-Regional-Multi-Person-Pose-Estimation/" data-id="ck337q4hb003q1cfyksfyuy8q" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/14/RMPE-Regional-Multi-Person-Pose-Estimation/" data-id="ck337ygb9003u63fyhl5ygpwd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bottom-UP/">Bottom UP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KeyPoint/">KeyPoint</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
@@ -370,7 +418,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/25/Pelee-A-Real-Time-Object-Detection-System-on-Mobile-Devices/" data-id="ck337q4h2003c1cfy0x042m35" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/25/Pelee-A-Real-Time-Object-Detection-System-on-Mobile-Devices/" data-id="ck337ygaz003d63fypnr2keqm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
@@ -411,7 +459,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/24/Cascade-R-CNN-Delving-into-High-Quality-Object-Detection/" data-id="ck337q4e200181cfyk75r3enw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/24/Cascade-R-CNN-Delving-into-High-Quality-Object-Detection/" data-id="ck337yg7z001463fyk9gckok0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -453,7 +501,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/24/Single-Shot-Refinement-Neural-Network-for-Object-Detection/" data-id="ck337q4i0004z1cfy8mmwhffb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/24/Single-Shot-Refinement-Neural-Network-for-Object-Detection/" data-id="ck337ygbu004y63fyuypk25ya" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
@@ -498,7 +546,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/24/CoupleNet-Coupling-Global-Structure-with-Local-Parts-for-Object-Detection/" data-id="ck337q4e6001b1cfyens7g7m6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/24/CoupleNet-Coupling-Global-Structure-with-Local-Parts-for-Object-Detection/" data-id="ck337yg87001b63fyz7ux26jg" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
@@ -543,7 +591,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/21/DSOD-Learning-Deeply-Supervised-Object-Detectors-from-Scratch/" data-id="ck337q4eb001e1cfy2wsi07k2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/21/DSOD-Learning-Deeply-Supervised-Object-Detectors-from-Scratch/" data-id="ck337yg83001863fylzpw4a4u" class="article-share-link">Share</a>
       
       
     </footer>
@@ -585,7 +633,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/01/R-FCN-Object-Detection-via-Region-based-Fully-Convolutional-Networks/" data-id="ck337q4h9003n1cfy6tarxrrt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/01/R-FCN-Object-Detection-via-Region-based-Fully-Convolutional-Networks/" data-id="ck337ygb7003q63fyphy6snlh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
@@ -623,7 +671,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/30/Inception-Series/" data-id="ck337q4gm002l1cfydjlm5j3w" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/30/Inception-Series/" data-id="ck337ygan002k63fy4jnu944i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -671,7 +719,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/22/UnitBox-An-Advanced-Object-Detection-Network/" data-id="ck337q4i400591cfy4ra3gze4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/22/UnitBox-An-Advanced-Object-Detection-Network/" data-id="ck337ygc8005k63fyko7dv8bq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
@@ -713,7 +761,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/20/Quick-Sort/" data-id="ck337q4hc003s1cfy730jm21b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/20/Quick-Sort/" data-id="ck337ygb6003o63fy5oa9ivo1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Template/">Template</a></li></ul>
@@ -772,7 +820,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/20/Build-Hadoop-Spark-Cluster/" data-id="ck337q4dg000t1cfyagyxg6qu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/20/Build-Hadoop-Spark-Cluster/" data-id="ck337yg7b000t63fy8ykxfome" class="article-share-link">Share</a>
       
       
     </footer>
@@ -920,7 +968,7 @@ DirectoryIndex index.php
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/19/Build-Jitamin-in-CentOS7/" data-id="ck337q4dk000w1cfyq2uiw8rb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/19/Build-Jitamin-in-CentOS7/" data-id="ck337yg7n000x63fyrjyfeajr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tools/">Tools</a></li></ul>
@@ -978,7 +1026,7 @@ DirectoryIndex index.php
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/19/Build-Gitlab-in-CentOS7/" data-id="ck337q4de000s1cfyms5tvric" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/19/Build-Gitlab-in-CentOS7/" data-id="ck337yg78000s63fy6z2wvxi7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tools/">Tools</a></li></ul>
@@ -1021,7 +1069,7 @@ DirectoryIndex index.php
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/19/RetinaNet-Focal-Loss-for-Dense-Object-Detection/" data-id="ck337q4hq00491cfy9pgvv1c8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/19/RetinaNet-Focal-Loss-for-Dense-Object-Detection/" data-id="ck337ygbi004863fyivkj22xt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
@@ -1063,7 +1111,7 @@ DirectoryIndex index.php
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/17/Build-Personal-Blog-with-WordPress/" data-id="ck337q4dq000z1cfyuf7ud1ap" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/17/Build-Personal-Blog-with-WordPress/" data-id="ck337yg7k000w63fykecc3rgr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tools/">Tools</a></li></ul>
@@ -1101,7 +1149,7 @@ DirectoryIndex index.php
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/17/Build-Personal-Blog-with-Hexo-Github-Page/" data-id="ck337q4dn000x1cfyks7kn37a" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/17/Build-Personal-Blog-with-Hexo-Github-Page/" data-id="ck337yg7q000z63fyza08bi76" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1155,7 +1203,7 @@ DirectoryIndex index.php
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li></ul>
     </div>
   </div>
 
@@ -1166,6 +1214,10 @@ DirectoryIndex index.php
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/11/18/Towards-Universal-Object-Detection-by-Domain-Attention/">Towards Universal Object Detection by Domain Attention</a>
+          </li>
         
           <li>
             <a href="/2019/06/28/Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm/">Look at Boundary: A Boundary-Aware Face Alignment Algorithm</a>
@@ -1181,10 +1233,6 @@ DirectoryIndex index.php
         
           <li>
             <a href="/2019/06/20/Tone-Mapping/">Tone Mapping</a>
-          </li>
-        
-          <li>
-            <a href="/2019/06/15/Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking/">Lightweight Real-time Makeup Try-on in Mobile Browsers with Tiny CNN Models for Facial Tracking</a>
           </li>
         
       </ul>
