@@ -1,1 +1,1467 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Live and Learn"><title>Out of Memory | Live and Learn</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Out of Memory</h1><a id="logo" href="/.">Out of Memory</a><p class="description">Live and Learn</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"><a href="/2019/06/28/Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm/">Look at Boundary: A Boundary-Aware Face Alignment Algorithm</a></h1><div class="post-meta">2019-06-28</div><div class="post-content"><p>URL:<a href="https://wywu.github.io/projects/LAB/LAB.html" target="_blank" rel="noopener">https://wywu.github.io/projects/LAB/LAB.html</a><br><img src="Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm-image002.png" alt><br>本论文提出了一种基于边界信息的landmark定位方法，通过回归landmark 构成的boundary可以一定程度上解决遮挡等一些问题，boundary的一般性也得以融合多个不同的landmark标注数据集进行一同训练。此外论文也贡献了包含1w张图片的数据集WFLW。</p></div><p class="readmore"><a href="/2019/06/28/Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/06/28/Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection/">Quantization Mimic: Towards Very Tiny CNN for Object Detection</a></h1><div class="post-meta">2019-06-28</div><div class="post-content"><p>URL:<a href="https://arxiv.org/pdf/1805.02152.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1805.02152.pdf</a><br>关于模型压缩的论文，论文致力于研究更加小型化的模型，论文定义“Very Tiny”为压缩模型的每一层channel数是原来模型的1/16或更小.从论文的标题也可以看出，论文提出的方法是结合目前比较常见的模型小型化方式：quantization 和 mimic。具体的模型结构在论文中给出了比较通俗的图例：<br><img src="Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection-image002.png" alt></p></div><p class="readmore"><a href="/2019/06/28/Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/06/24/Mimicking-Very-Efficient-Network-for-Object-Detection/">Mimicking Very Efficient Network for Object Detection</a></h1><div class="post-meta">2019-06-24</div><div class="post-content"><p>URL:<a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Li_Mimicking_Very_Efficient_CVPR_2017_paper.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_cvpr_2017/papers/Li_Mimicking_Very_Efficient_CVPR_2017_paper.pdf</a><br>这篇论文可以理解为关于模型压缩的论文，论文采取大模型来训练小模型的方法，作者claim这是第一次将mimic方法运用到物体检测领域。<br>之前mimic方法通常用在分类任务中，Mimic方法的出发点是希望大模型学习到的特征可以传递给小模型，这篇论文主要有如下的contribution：</p></div><p class="readmore"><a href="/2019/06/24/Mimicking-Very-Efficient-Network-for-Object-Detection/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/06/20/Tone-Mapping/">Tone Mapping</a></h1><div class="post-meta">2019-06-20</div><div class="post-content"><p>Tone Mapping 可以简单理解为将HDR（High Dynamic Range） 的图像映射到LDR（Low Dynamic Range）的图像中，DR的定义可以理解为同一张图片中所有像素点最大亮度和最小亮度的log的差值，RGB场景下亮度的定义为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Y = 0.2126R + 0.7152G + 0.0722B</span><br></pre></td></tr></table></figure></p></div><p class="readmore"><a href="/2019/06/20/Tone-Mapping/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/06/15/Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking/">Lightweight Real-time Makeup Try-on in Mobile Browsers with Tiny CNN Models for Facial Tracking</a></h1><div class="post-meta">2019-06-15</div><div class="post-content"><p>URL:<a href="https://arxiv.org/abs/1906.02260" target="_blank" rel="noopener">https://arxiv.org/abs/1906.02260</a><br>一篇主要做轻量级Landmark应用的论文，整体novelty有限，主要是在MobileNetV2的基础上实现了一个轻量级的Facial Landmark模型，在iPhone XR上可以实现20ms的inference速度</p></div><p class="readmore"><a href="/2019/06/15/Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/06/10/Improving-Landmark-Localization-with-Semi-Supervised-Learning/">Improving Landmark Localization with Semi-Supervised Learning</a></h1><div class="post-meta">2019-06-10</div><div class="post-content"><p>URL:<a href="https://arxiv.org/abs/1709.01591?context=cs" target="_blank" rel="noopener">https://arxiv.org/abs/1709.01591?context=cs</a><br>这篇论文是关于landmark检测的，作者认为目前公开的数据集中标注landmark终究量比较少，但是标注属性（比如分类）的数据集实际上有很多，因此本论文提出半监督的神经网络模型结合标注landmark的数据集和标注属性的数据集来提高landmark定位的准确性。</p></div><p class="readmore"><a href="/2019/06/10/Improving-Landmark-Localization-with-Semi-Supervised-Learning/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/06/05/Seeing-Small-Faces-from-Robust-Anchor’s-Perspective/">Seeing Small Faces from Robust Anchor’s Perspective</a></h1><div class="post-meta">2019-06-05</div><div class="post-content"><p>URL:<a href="https://arxiv.org/pdf/1802.09058.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1802.09058.pdf</a><br>这篇论文是关于anchor的设计，论文提出了一些anchor设计的策略来检测小脸。下图(a)是作者统计的传统基于anchor的模型在不同人脸大小下的recall，下图(b)则是作者将所有的人脸按大小分组，然后计算每一个组里每张人脸与anchor的最大IoU，对group中所有的max IoU取均值就是图(b)的average IoU。通过统计分析作者认为之所以对于小脸recall比较低的情况是因为小脸和初始化的anchor IoU较小，因此论文提出EMO Score来评估gt和anchor之间的联系并提出了一些anchor设计的策略。</p></div><p class="readmore"><a href="/2019/06/05/Seeing-Small-Faces-from-Robust-Anchor’s-Perspective/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/06/01/Style-Aggregated-Network-for-Facial-Landmark-Detection/">Style Aggregated Network for Facial Landmark Detection</a></h1><div class="post-meta">2019-06-01</div><div class="post-content"><p>URL:<a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Dong_Style_Aggregated_Network_CVPR_2018_paper.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_cvpr_2018/papers/Dong_Style_Aggregated_Network_CVPR_2018_paper.pdf</a><br>这篇论文主要想解决的问题是不同的图片风格对landmark定位的影响，比如论文中给出的例子对于同一张图片的不同风格（原图、灰度图、以及加入光照的图片）通过嘴部特写可以看到明显的差别。因此论文提出 Style-Aggregated Network (SAN) 整合不同的图片风格来更好的检测人脸lmk.<br><img src="Style-Aggregated-Network-for-Facial-Landmark-Detection-image002.png" alt></p></div><p class="readmore"><a href="/2019/06/01/Style-Aggregated-Network-for-Facial-Landmark-Detection/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/05/25/Deep-Regionlets-for-Object-Detection/">Deep Regionlets for Object Detection</a></h1><div class="post-meta">2019-05-25</div><div class="post-content"><p>URL:<a href="http://arxiv.org/abs/1712.02408" target="_blank" rel="noopener">http://arxiv.org/abs/1712.02408</a><br>论文主要将regionlet的概念引入到CNN网络结构中提出了一个新的物体检测模型，检测模型主要分为两个部分：</p></div><p class="readmore"><a href="/2019/05/25/Deep-Regionlets-for-Object-Detection/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/05/21/Regionlets-for-Generic-Object-Detection/">Regionlets for Generic Object Detection</a></h1><div class="post-meta">2019-05-21</div><div class="post-content"><p>URL:<a href="http://www.xiaoyumu.com/s/PDF/Regionlets.pdf" target="_blank" rel="noopener">http://www.xiaoyumu.com/s/PDF/Regionlets.pdf</a><br>这是一个传统的用于物体检测的方法，论文的主要贡献是提出了regionlet的概念以及基于regionlet的物体检测方法论文定义物体检测中有三个范围概念：Bounding Box、Region、Regionlet，Bounding Box就是目标候选框，Region是用于Bounding Box的特征提取，位于Bounding Box内，作者认为Region的粒度过大不足以表示局部的特征，因此在Region内部提出更小的范围Regionlet：<br><img src="Regionlets-for-Generic-Object-Detection-image002.png" alt></p></div><p class="readmore"><a href="/2019/05/21/Regionlets-for-Generic-Object-Detection/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/05/17/Object-Detection-in-Video-with-Spatiotemporal-Sampling-Networks/">Object Detection in Video with Spatiotemporal Sampling Networks</a></h1><div class="post-meta">2019-05-17</div><div class="post-content"><p>URL:<a href="https://arxiv.org/pdf/1803.05549.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1803.05549.pdf</a><br>这是ECCV2018 关于物体检测的一篇论文,论文主要提出一种时空采样网络STSN来提高视频中的物体检测效果。论文出发点还是整合多帧的信息来提高当前帧的检测效果，论文提出的STSN结构和FGFA比较类似，基本都会涉及到backbone网络提取特征、特征聚合等操作.</p></div><p class="readmore"><a href="/2019/05/17/Object-Detection-in-Video-with-Spatiotemporal-Sampling-Networks/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/05/12/Flow-Guided-Feature-Aggregation-for-Video-Object-Detection/">Flow-Guided Feature Aggregation for Video Object Detection </a></h1><div class="post-meta">2019-05-12</div><div class="post-content"><p>URL:<a href="https://arxiv.org/pdf/1703.10025.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1703.10025.pdf</a><br>这篇论文是MSRA daijifeng组的研究工作，主要提出了一种神经网络结构来进行视频中的物体识别，视频中的物体检测典型的特征就是有些帧的物体因为运动模糊、遮挡、奇怪的pose导致难以检测，但是这个帧的附近帧中可能物体是处于一个正常的状态，因此论文考虑通过整合多帧信息来提高物体检测的效果，从而提出了FGFA (flow-guided feature aggregation) 网络。</p></div><p class="readmore"><a href="/2019/05/12/Flow-Guided-Feature-Aggregation-for-Video-Object-Detection/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/05/10/Flownet-Learning-optical-flow-with-convolutional-networks/">Flownet: Learning optical flow with convolutional networks</a></h1><div class="post-meta">2019-05-10</div><div class="post-content"><p>URL:<a href="http://openaccess.thecvf.com/content_iccv_2015/papers/Dosovitskiy_FlowNet_Learning_Optical_ICCV_2015_paper.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_iccv_2015/papers/Dosovitskiy_FlowNet_Learning_Optical_ICCV_2015_paper.pdf</a><br>这是一篇ICCV2015的论文，主要是利用CNN来进行光流的计算，在视频的相关应用中通常会涉及到光流的概念，可参考Stanford CS131了解相关内容。论文主要提出了两种CNN结构：</p></div><p class="readmore"><a href="/2019/05/10/Flownet-Learning-optical-flow-with-convolutional-networks/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/05/01/Pose-Invariant-3D-Face-Alignment/">Pose-Invariant 3D Face Alignment </a></h1><div class="post-meta">2019-05-01</div><div class="post-content"><p>URL:<a href="https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Jourabloo_Pose-Invariant_3D_Face_ICCV_2015_paper.pdf" target="_blank" rel="noopener">https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Jourabloo_Pose-Invariant_3D_Face_ICCV_2015_paper.pdf</a><br>利用3D模型来处理大Pose Landmark问题的一篇文章，整体还是follow 3DMM的那一套pipeline，只是因为这篇论文出的相对比较早，对于参数的学习是利用一般的回归模型来级联回归，整体在不同Pose下还是有一定效果的。不过和整个pipeline的设计有关速度比较慢。</p></div><p class="readmore"><a href="/2019/05/01/Pose-Invariant-3D-Face-Alignment/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/04/20/Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression/">Adaptive Wing Loss for Robust Face Alignment via Heatmap Regression</a></h1><div class="post-meta">2019-04-20</div><div class="post-content"><p>URL:<a href="https://arxiv.org/abs/1904.07399" target="_blank" rel="noopener">https://arxiv.org/abs/1904.07399</a><br>最新挂出来的关于人脸landmark的论文，可以理解为整合wing loss + look at boundary进行的优化，wing loss在cvpr2018提出的时候是直接应用在回归landmark点坐标，作者想将其应用到heatmap出点的逻辑上因而提出了adaptive wing loss，同时在网络中引入boundary的信息来辅助模型的训练，在benchmark上的表现还是很不错的，部分指标可以和wing loss、lab拉开比较大的差距。</p></div><p class="readmore"><a href="/2019/04/20/Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/04/10/Spatial-Transformer-Networks/">Spatial Transformer Networks</a></h1><div class="post-meta">2019-04-10</div><div class="post-content"><p>URL:<a href="https://arxiv.org/pdf/1506.02025.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1506.02025.pdf</a><br>这是一篇NIPS 2015的文章，主要提出了STN网络结构直接的赋予了网络对于各种变换的不变性。<br>STN网络主要分为三个部分：</p></div><p class="readmore"><a href="/2019/04/10/Spatial-Transformer-Networks/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/04/04/Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection/">Semantic Alignment: Finding Semantically Consistent Ground-truth for Facial Landmark Detection</a></h1><div class="post-meta">2019-04-04</div><div class="post-content"><p>URL:<a href="https://arxiv.org/abs/1903.10661" target="_blank" rel="noopener">https://arxiv.org/abs/1903.10661</a><br>CVPR2019最新挂出来的一篇关于人脸landmark的论文，论文的出发点是觉得目前landmark定位精度受限于部分标注点”语意”模糊有关,比如说脸部轮廓点或者眼部轮廓点不像眼球、鼻尖这些点有明确的语意定义，因此标注引入的误差就相对影响比较大。所以作者从这方面入手在模型每次迭代的时候去寻找这样一个“真正”的gt来监督网络的训练，此外为了来修正一些偏移比较厉害的点，作者又引入了一个子网络来refine整体的landmark。这篇论文整体个人感觉很有意义。</p></div><p class="readmore"><a href="/2019/04/04/Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/03/25/Object-Detection-based-on-Region-Decomposition-and-Assembly/">Object Detection based on Region Decomposition and Assembly</a></h1><div class="post-meta">2019-03-25</div><div class="post-content"><p>URL: <a href="https://arxiv.org/abs/1901.08225" target="_blank" rel="noopener">https://arxiv.org/abs/1901.08225</a><br>AAAI2019的一篇关于检测的论文，论文主要的出发点是想解决遮挡场景下的物体检测问题，整个逻辑基于Faster RCNN的框架来做，主要思路是先把proposal分part分别来提取特征然后再通过一定的方法将其merge到一起来突出可见部分的特征，从而得到更可信的信息。</p></div><p class="readmore"><a href="/2019/03/25/Object-Detection-based-on-Region-Decomposition-and-Assembly/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/03/19/Mask-Scoring-R-CNN/">Mask Scoring R-CNN</a></h1><div class="post-meta">2019-03-19</div><div class="post-content"><p>URL:<a href="https://arxiv.org/abs/1903.00241" target="_blank" rel="noopener">https://arxiv.org/abs/1903.00241</a><br>论文的出发点很直观，就是为了优化在目前的一些instance segmentation的方法中用classification score来标注一个mask的质量，这个其实很显然和实际应用场景是完全不一致的，比如论文中给出的例子：<br><img src="Mask-Scoring-R-CNN-屏幕快照 2019-03-19 下午10.56.07.png" alt></p></div><p class="readmore"><a href="/2019/03/19/Mask-Scoring-R-CNN/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/03/18/Region-Proposal-by-Guided-Anchoring/">Region Proposal by Guided Anchoring</a></h1><div class="post-meta">2019-03-18</div><div class="post-content"><p>URL:<a href="https://arxiv.org/abs/1901.03278" target="_blank" rel="noopener">https://arxiv.org/abs/1901.03278</a><br>CVPR2019的一篇对anchor进行优化的论文，主要将原来需要预先定义的anchor改成直接end2end学习anchor位置和size。首先anchor的定义通常为(x, y, w, h) (x, y为中心点)，formulate一下：<br><img src="Region-Proposal-by-Guided-Anchoring-屏幕快照 2019-03-18 下午10.33.58.png" alt><br>因此本文所提的guided anchoring利用两个branch分别预测anchor的位置和w、h：<br><img src="Region-Proposal-by-Guided-Anchoring-屏幕快照 2019-03-18 下午10.28.29.png" alt></p></div><p class="readmore"><a href="/2019/03/18/Region-Proposal-by-Guided-Anchoring/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/03/15/Grid-RCNN/">Grid RCNN</a></h1><div class="post-meta">2019-03-15</div><div class="post-content"><p>URL:<a href="https://arxiv.org/abs/1811.12030" target="_blank" rel="noopener">https://arxiv.org/abs/1811.12030</a><br>CVPR2018的一篇论文，从某种程度上来说是借鉴Bottom Up的方法来优化目前检测方面的一些问题，主要出发点还是希望检测器出的框能尽可能的准，所以相比较一般的检测器直接出四维的坐标信息，Grid RCNN则是出9个点，用9个点的信息来表示一个bbox。<br>具体的PipeLine如下：<br><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.04.35.png" alt></p></div><p class="readmore"><a href="/2019/03/15/Grid-RCNN/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/03/03/Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks/">Wing Loss for Robust Facial Landmark Localisation with Convolutional Neural Networks</a></h1><div class="post-meta">2019-03-03</div><div class="post-content"><p>URL:<a href="https://arxiv.org/abs/1711.06753" target="_blank" rel="noopener">https://arxiv.org/abs/1711.06753</a><br>CVPR2018一篇关于人脸Landmark的论文，这篇论文主要是关于人脸关键点的定位，因为论文的重点是loss function和data augmentation所以论文所实验的模型结构是比较简单的CNN结构来实验：<br><img src="Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks-image002.png" alt></p></div><p class="readmore"><a href="/2019/03/03/Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/03/03/Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression/">Generalized Intersection over Union: A Metric and A Loss for Bounding Box Regression</a></h1><div class="post-meta">2019-03-03</div><div class="post-content"><p>URL：<a href="https://arxiv.org/abs/1902.09630" target="_blank" rel="noopener">https://arxiv.org/abs/1902.09630</a><br>这是CVPR2019的一篇论文。本论文主要提出了GIoU的概念来优化IoU在评估或者IoU Loss在训练中的一些问题<br>这是利用Ln-Loss来优化bbox回归问题的常见bug，不同的overlap程度在Ln-loss看来都一样，但是实际上对于IoU或者GIoU确实不一样的，很显然后者更合理：</p></div><p class="readmore"><a href="/2019/03/03/Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/03/02/Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points/">Bottom-up Object Detection by Grouping Extreme and Center Points</a></h1><div class="post-meta">2019-03-02</div><div class="post-content"><p>URL:<a href="https://arxiv.org/pdf/1901.08043.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1901.08043.pdf</a><br>Codebase:<a href="https://github.com/xingyizhou/ExtremeNet" target="_blank" rel="noopener">https://github.com/xingyizhou/ExtremeNet</a><br>一篇比较有意义的论文，主要是用bottom up的方法来做检测的问题，整个工作是基于ECCV2018的cornernet来做的，对于一个框ExtremeNet会出5个点，四个边界点和一个中心点，中心点主要是用来做group。下图是标注的示例图：</p></div><p class="readmore"><a href="/2019/03/02/Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/03/02/PFLD-A-Practical-Facial-Landmark-Detector/">PFLD: A Practical Facial Landmark Detector</a></h1><div class="post-meta">2019-03-02</div><div class="post-content"><p>URL: <a href="https://arxiv.org/abs/1902.10859" target="_blank" rel="noopener">https://arxiv.org/abs/1902.10859</a><br>相关主页：<a href="https://sites.google.com/view/xjguo/fld" target="_blank" rel="noopener">https://sites.google.com/view/xjguo/fld</a><br>这两天刚挂出来的关于landmark的论文，论文中对300w数据集报的点是要比LAB、SAN等CVPR2018论文的点是要高的，在845手机上也可以达到140FPS的速度，论文所提方法主要在设计加权的loss，比如考虑人脸的yaw、pitch、roll等信息来加权loss。</p></div><p class="readmore"><a href="/2019/03/02/PFLD-A-Practical-Facial-Landmark-Detector/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/28/S3FD-Single-Shot-Scale-invariant-Face-Detector/">S3FD: Single Shot Scale-invariant Face Detector</a></h1><div class="post-meta">2019-02-28</div><div class="post-content"><p>URL: <a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_S3FD_Single_Shot_ICCV_2017_paper.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_S3FD_Single_Shot_ICCV_2017_paper.pdf</a><br>ICCV2017的一篇论文，主要研究小人脸的检测，作者针对目前基于anchor的检测器对小人脸表现不好的现象分析了几个可能的原因，并针对性的提出了具体的解决方法，比如新的anchor匹配策略、max out backgroud label等方法。</p></div><p class="readmore"><a href="/2019/02/28/S3FD-Single-Shot-Scale-invariant-Face-Detector/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/22/谈一谈模型量化/">谈一谈模型量化</a></h1><div class="post-meta">2019-02-22</div><div class="post-content"><p>说到量化，首先需要弄清楚我们为什么需要量化？为什么可以量化？<br>对于为什么需要量化可以从两个实际的需求来说，第一，对于一般float32存储的模型来说通常硬盘占用相对会比较大，那么在现有的一些端上比如手机端对模型的内存占用是有很明显的限制的，将float32的模型转化为int8的模型就可以带来75%存储的节约，因此在某些场景下模型的量化也是一个必然的选择。第二，从模型的运算效率上来说，int8只有一个字节，float32有四个字节，所以int8参数的获取只需要25%float32的内存带宽，因此可以更好地使用缓存，同时每个时钟周期执行更多操作的SIMD操作。另外DSP等计算单元本身对int8计算很友好，int8模型的使用可以提高速度同时可以降低功耗。<br>至于为什么可以量化，可以这么理解，我们知道CNN网络在对图片进行各种处理的时候比如识别、比如分类、比如检测，都有比较强的鲁棒性，对噪声的兼容性相对比较高。那么落到量化这件事情上来说，可能带来的问题就是精度的损失，那么其实我们可以把这一部分精度的损失理解为外界带给网络的<strong>“噪声”</strong>,所以结合CNN在具体任务的表现我们有理由相信量化操作给网络带来的精度影响不会那么严重。当然了这算是比较理想的状态了，其实在具体的实验过程中对于目前已经做的比较轻量的网络，量化对模型的精度还是会有比较大的影响的。所以量化通常也是根据具体的任务需要做的一个选择。</p></div><p class="readmore"><a href="/2019/02/22/谈一谈模型量化/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/03/You-Only-Look-Once-Unified-Real-Time-Object-Detection/">You Only Look Once: Unified, Real-Time Object Detection</a></h1><div class="post-meta">2019-02-03</div><div class="post-content"><p>URL: <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf" target="_blank" rel="noopener">https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf</a><br><strong>重读经典系列第一篇：YOLO</strong><br>YOLO系列是另一个经典的Single Stage的检测器：<br><img src="You-Only-Look-Once-Unified-Real-Time-Object-Detection-屏幕快照 2019-02-03 下午10.49.49.png" alt></p></div><p class="readmore"><a href="/2019/02/03/You-Only-Look-Once-Unified-Real-Time-Object-Detection/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/03/SSD-Single-Shot-MultiBox-Detector/">SSD: Single Shot MultiBox Detector</a></h1><div class="post-meta">2019-02-03</div><div class="post-content"><p>URL: <a href="https://arxiv.org/pdf/1512.02325.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1512.02325.pdf</a><br>Code: <a href="https://github.com/weiliu89/caffe/tree/ssd" target="_blank" rel="noopener">https://github.com/weiliu89/caffe/tree/ssd</a><br><strong>重读经典系列第一篇：SSD</strong><br>SSD是很经典的Single Stage检测网络，至今仍有很多的工作是基于SSD在改进。<br>不同于典型的Two stage检测网络将proposal的生成放在RPN网络来做，然后后续的网络branch基于RPN的结果进行Refine，SSD将Proposal直接放到网络后面的feature map上来做，基本逻辑如下图，实际和FasterRCNN网络生成anchor的逻辑是一模一样的：<br><img src="SSD-Single-Shot-MultiBox-Detector-屏幕快照 2019-02-03 下午10.33.52.png" alt></p></div><p class="readmore"><a href="/2019/02/03/SSD-Single-Shot-MultiBox-Detector/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/01/31/How-Does-Batch-Normalization-Help-Optimization/">How Does Batch Normalization Help Optimization?</a></h1><div class="post-meta">2019-01-31</div><p class="readmore"><a href="/2019/01/31/How-Does-Batch-Normalization-Help-Optimization/">阅读全文</a></p></div><nav class="page-navigator"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页</a></nav></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://yoursite.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algorithm/">Algorithm</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering/">Engineering</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Paper-Reading/">Paper Reading</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Loss/" style="font-size: 15px;">Loss</a> <a href="/tags/Mobile/" style="font-size: 15px;">Mobile</a> <a href="/tags/Platform/" style="font-size: 15px;">Platform</a> <a href="/tags/Hardware/" style="font-size: 15px;">Hardware</a> <a href="/tags/Detection/" style="font-size: 15px;">Detection</a> <a href="/tags/Landmark/" style="font-size: 15px;">Landmark</a> <a href="/tags/KeyPoint/" style="font-size: 15px;">KeyPoint</a> <a href="/tags/BottomUp/" style="font-size: 15px;">BottomUp</a> <a href="/tags/Bottom-Up/" style="font-size: 15px;">Bottom_Up</a> <a href="/tags/Pose/" style="font-size: 15px;">Pose</a> <a href="/tags/Tools/" style="font-size: 15px;">Tools</a> <a href="/tags/Engineering/" style="font-size: 15px;">Engineering</a> <a href="/tags/Mutual-learning/" style="font-size: 15px;">Mutual learning</a> <a href="/tags/Classification/" style="font-size: 15px;">Classification</a> <a href="/tags/Segmentation/" style="font-size: 15px;">Segmentation</a> <a href="/tags/Regularization/" style="font-size: 15px;">Regularization</a> <a href="/tags/VID/" style="font-size: 15px;">VID</a> <a href="/tags/Face/" style="font-size: 15px;">Face</a> <a href="/tags/SOT/" style="font-size: 15px;">SOT</a> <a href="/tags/Tracking/" style="font-size: 15px;">Tracking</a> <a href="/tags/Track/" style="font-size: 15px;">Track</a> <a href="/tags/Mimick/" style="font-size: 15px;">Mimick</a> <a href="/tags/3D/" style="font-size: 15px;">3D</a> <a href="/tags/Template/" style="font-size: 15px;">Template</a> <a href="/tags/Bottom-UP/" style="font-size: 15px;">Bottom UP</a> <a href="/tags/DeepLab/" style="font-size: 15px;">DeepLab</a> <a href="/tags/Learning-Strategy/" style="font-size: 15px;">Learning Strategy</a> <a href="/tags/Classic/" style="font-size: 15px;">Classic</a> <a href="/tags/Basic/" style="font-size: 15px;">Basic</a> <a href="/tags/Quantization/" style="font-size: 15px;">Quantization</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/06/28/Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm/">Look at Boundary: A Boundary-Aware Face Alignment Algorithm</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/28/Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection/">Quantization Mimic: Towards Very Tiny CNN for Object Detection</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/24/Mimicking-Very-Efficient-Network-for-Object-Detection/">Mimicking Very Efficient Network for Object Detection</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/20/Tone-Mapping/">Tone Mapping</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/15/Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking/">Lightweight Real-time Makeup Try-on in Mobile Browsers with Tiny CNN Models for Facial Tracking</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/10/Improving-Landmark-Localization-with-Semi-Supervised-Learning/">Improving Landmark Localization with Semi-Supervised Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/05/Seeing-Small-Faces-from-Robust-Anchor’s-Perspective/">Seeing Small Faces from Robust Anchor’s Perspective</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/01/Style-Aggregated-Network-for-Facial-Landmark-Detection/">Style Aggregated Network for Facial Landmark Detection</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/25/Deep-Regionlets-for-Object-Detection/">Deep Regionlets for Object Detection</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/21/Regionlets-for-Generic-Object-Detection/">Regionlets for Generic Object Detection</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://github.com/libanghuai" title="Github" target="_blank">Github</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">Out of Memory.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.css"><script type="text/javascript" color="0,0,0" opacity="0.5" zindex="-2" count="50" src="//lib.baomitu.com/canvas-nest.js/2.0.3/canvas-nest.umd.js"></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Out of Memory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Live and Learn">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Out of Memory">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Out of Memory">
+<meta property="og:description" content="Live and Learn">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Out of Memory">
+<meta name="twitter:description" content="Live and Learn">
+  
+    <link rel="alternate" href="/atom.xml" title="Out of Memory" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Out of Memory</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Live and Learn</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/28/Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm/" class="article-date">
+  <time datetime="2019-06-28T10:08:42.000Z" itemprop="datePublished">2019-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/28/Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm/">Look at Boundary: A Boundary-Aware Face Alignment Algorithm</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://wywu.github.io/projects/LAB/LAB.html" target="_blank" rel="noopener">https://wywu.github.io/projects/LAB/LAB.html</a><br><img src="Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm-image002.png" alt><br>本论文提出了一种基于边界信息的landmark定位方法，通过回归landmark 构成的boundary可以一定程度上解决遮挡等一些问题，boundary的一般性也得以融合多个不同的landmark标注数据集进行一同训练。此外论文也贡献了包含1w张图片的数据集WFLW。</p>
+<p>论文所提的整个方法主要分成三个部分：</p>
+<ol>
+<li>Boundary heatmap estimator：这一部分是一个Hourglass结构，用来初步生成boundary的heatmap，需要说明的是，为了增强模型在有遮挡情况下的表现，论文引入了message passing layer来传递不同boundary之间的信息和同一个boundary不同stack之间的信息。这一部分的细节在这篇论文的补充材料里面写的比较清楚，不管是inter-level还是intra-level信息的传递都是不同feature 之间的特征融合（conv + entry-wise sum ），intra-level是不同的stack之间，inter-level是k个（k代表boundary的个数）boundary heatmap之间。<br><img src="Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm-image003.png" alt></li>
+<li>Boundary-aware landmarks regressor ：该模块主要用来回归heatmap：<br>a. Boundary由区域的landmark插值生成<br>b. Input image fusion： I为输入图片，Mi为第i个heatmap，乘号为element-wise dot product，加号为channel-wise concatenation<br><img src="Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm-image004.png" alt><br>c.  Feature map fusion：F为feature map M为heatmap，其他和上面类似<br><img src="Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm-image005.png" alt><br><img src="Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm-image006.png" alt></li>
+<li>Boundary effectiveness discriminator：这一部分主要引入对抗学习的思想，第一部分Boundary heatmap estimator生成的heatmap有效性被定义为：<br><img src="Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm-image007.png" alt><br>M为生成的heatmap，S为对应的landmark集合，Dist为gt对应的distance matric map ，θ 和δ 分别是距离和概率的阈值，整个公式需要保证比较好的heatmap对应的landmark要尽可能多的离gt近<br>Discriminator的Loss：<br><img src="Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm-image008.png" alt><br>Adversarial Loss：<br><img src="Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm-image009.png" alt></li>
+<li>此外论文也提供了一个WFLW数据集，包含1w张图片<br>和目前不少的landmark localization方法类似，论文所提方法也是基于区域的想法去解决定位的问题，只是通过一些插值的操作做了比较细致的处理，感觉对于遮挡等一些问题会比较有帮助。</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/28/Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm/" data-id="ck337q4gv002t1cfy0im4emiq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/28/Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection/" class="article-date">
+  <time datetime="2019-06-28T09:59:27.000Z" itemprop="datePublished">2019-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/28/Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection/">Quantization Mimic: Towards Very Tiny CNN for Object Detection</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/pdf/1805.02152.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1805.02152.pdf</a><br>关于模型压缩的论文，论文致力于研究更加小型化的模型，论文定义“Very Tiny”为压缩模型的每一层channel数是原来模型的1/16或更小.从论文的标题也可以看出，论文提出的方法是结合目前比较常见的模型小型化方式：quantization 和 mimic。具体的模型结构在论文中给出了比较通俗的图例：<br><img src="Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection-image002.png" alt></p>
+<p>具体：</p>
+<ol>
+<li>训练标准的大模型，论文中实验了R-FCN和Faster R-CNN两个网络模型。然后利用论文定义的量化函数Q将大模型转化成量化模型。<br><img src="Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection-image003.png" alt><br>公式中的三个参数α、β、γ取自D序列<img src="Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection-image004.png" alt>, 其中s就是均匀量化的步长。函数Q在论文中说的比较不清楚，实际上参考论文中给出的示意图会比较好理解，如果在图例上以（0，0）为原点标上x, y轴看上去会比较直观。取s=1，α = 0、β = 1、γ = 2，那么对于0.5&lt;x&lt;1.5, Q(x) = 1， 然后再取α = 1、β = 2、γ = 3…依次可以得到论文中的图例。<br><img src="Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection-image005.png" alt></li>
+<li>至于论文中的mimic部分，沿用之前曾阅读的一篇CVPR2017的论文《Mimicking Very Efficient Network for Object Detection》，利用Feature Map Mimic Learning来训练小模型，整个模型的损失函数如下：<br><img src="Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection-屏幕快照 2019-06-28 下午6.02.41.png" alt><br>Lm为mimic loss，其实就是两个模型feature map的L2 loss，L中的前两个Loss分别是RPN的cls和reg loss，后两个则是R-FCN或者Faster R-CNN cls和reg loss。</li>
+<li>为了小模型能更好的从量化后的大模型中学习，论文对小模型也进行了量化，从模型的结构示意图中可以直观的看到。与其他的模型小型化方法在Wider Face数据集上的比较，可以看到Quantization Mimic效果还是比较明显的。<br><img src="Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection-image007.png" alt></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/28/Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection/" data-id="ck337q4h8003l1cfyqqbc9v41" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mimick/">Mimick</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Mimicking-Very-Efficient-Network-for-Object-Detection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/24/Mimicking-Very-Efficient-Network-for-Object-Detection/" class="article-date">
+  <time datetime="2019-06-24T09:52:22.000Z" itemprop="datePublished">2019-06-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/24/Mimicking-Very-Efficient-Network-for-Object-Detection/">Mimicking Very Efficient Network for Object Detection</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Li_Mimicking_Very_Efficient_CVPR_2017_paper.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_cvpr_2017/papers/Li_Mimicking_Very_Efficient_CVPR_2017_paper.pdf</a><br>这篇论文可以理解为关于模型压缩的论文，论文采取大模型来训练小模型的方法，作者claim这是第一次将mimic方法运用到物体检测领域。<br>之前mimic方法通常用在分类任务中，Mimic方法的出发点是希望大模型学习到的特征可以传递给小模型，这篇论文主要有如下的contribution：</p>
+<ol>
+<li>Feature Map Mimic Learning：不同于分类任务中从大模型的soft targets或者logits来学习小模型，结合物体检测这个具体任务，论文提出大模型的feature map来监督训练小模型，但是CNN网络的最后一层feature map都是一些高维特征，对于一些小物体的表现会比较弱，因此论文以proposal为单位来监督训练，训练目标为：<br><img src="Mimicking-Very-Efficient-Network-for-Object-Detection-屏幕快照 2019-06-28 下午5.52.58.png" alt><br>L(w)为最终的Loss， Lm(W)为大小模型feature map的L2 Loss， Lgt(W)为RPN中cls和reg的Loss，ui是从大模型feature map采样得到的特征，vi是从小模型中采样得到的特征,  r为回归函数负责将vi映射到ui的维度上。后期作者多Lm（W）加上norm进行优化：<br><img src="Mimicking-Very-Efficient-Network-for-Object-Detection-image003.png" alt></li>
+<li>具体模型结构分为两个阶段：<ol>
+<li>第一阶段可以理解为对RPN的训练：大模型为预训练好的Faster RCNN或者R-FCN，小模型的最后是一个RPN网络，同一张训练图片同时经过大模型和小模型得到对应的feature maps，利用小模型RPN产生的proposal进行上面提到的feature map mimic learning进行训练。</li>
+<li>第二阶段可以理解为对Faster RCNN或者R-FCN的训练，在这一部分在会加入分类任务中的logits mimic learning利用大模型的logits来监督学习。<br><img src="Mimicking-Very-Efficient-Network-for-Object-Detection-image004.png" alt><br>除此之外，论文还介绍了在小模型中加入deconv层来解决输入图片较小的情况：<br><img src="Mimicking-Very-Efficient-Network-for-Object-Detection-image005.png" alt></li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/24/Mimicking-Very-Efficient-Network-for-Object-Detection/" data-id="ck337q4gx002y1cfy7etd8dj9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mimick/">Mimick</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Tone-Mapping" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/20/Tone-Mapping/" class="article-date">
+  <time datetime="2019-06-20T03:47:44.000Z" itemprop="datePublished">2019-06-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/20/Tone-Mapping/">Tone Mapping</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Tone Mapping 可以简单理解为将HDR（High Dynamic Range） 的图像映射到LDR（Low Dynamic Range）的图像中，DR的定义可以理解为同一张图片中所有像素点最大亮度和最小亮度的log的差值，RGB场景下亮度的定义为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Y = 0.2126R + 0.7152G + 0.0722B</span><br></pre></td></tr></table></figure></p>
+<p>那么很显然在LDR下DR的取值只能到2.4，而在真实场景中DR的值甚至可以达到9以上.<br>针对Tone Mapping的操作也衍生出了很多优化的方法，比如<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.352.2669&amp;rep=rep1&amp;type=pdf" target="_blank" rel="noopener">这篇论文</a><br>这篇论文的应用场景是视频的压缩，那么针对这个场景常用的Tone Mapping逻辑一般如下， l为输入的HDR原图，θ为Tone Mapping操作的参数，v为HDR图经过Tone Mapping之后得到的LDR图, v~ 为v经过视频压缩、解压缩之后得到的LDR图，l~为v~经过Tone Mapping逆过程得到的伪HDR的图，所以将l和l～的diff作为整个优化过程的object function来优化θ的参数即可，比如来优化这两个值的MSE：<br><img src="Tone-Mapping-屏幕快照 2019-06-21 上午10.28.40.png" alt><br>而本论文中提出的方法则是完全简化了这个过程，所以整个论文的核心就落到了distortion model的构建中：<br><img src="Tone-Mapping-屏幕快照 2019-06-21 上午10.51.17.png" alt><br>求解distortion model的核心又是tone curve，类似直方图均衡的方法，为和人类视觉系统的感官逻辑保持一致，tone curve histogram的计算是基于HDR图的log10(亮度)来计算的：<br><img src="Tone-Mapping-屏幕快照 2019-06-21 上午10.53.27.png" alt><br>整个curve是分段的线性映射，每一段的宽度都为δ （论文中取的0.1），横坐标可以理解为HDR域的情况，纵坐标可以理解为映射到LDR域的情况，每一段curve的计算，s<sub>k</sub>为斜率：<br><img src="Tone-Mapping-屏幕快照 2019-06-21 上午10.54.40.png" alt><br><img src="Tone-Mapping-屏幕快照 2019-06-21 上午11.08.03.png" alt><br>因为curve是分段线性的，所以tone mapping的逆向公式也就很好计算了：<br><img src="Tone-Mapping-屏幕快照 2019-06-21 上午11.08.26.png" alt><br>单看论文中提出的简化的tone mapping计算方法和原始方法的最主要差别就是把压缩损失那一部分给去掉了，而实际作者是用了一个分布函数来简化了这个操作p<sub>C</sub>就是压缩损失的分布函数,p<sub>L</sub>实际就是histogram计算出来的比率了：<br><img src="Tone-Mapping-屏幕快照 2019-06-21 上午11.09.13.png" alt><br>作者通过层层推导之后把上述的公式简化到：<br><img src="Tone-Mapping-屏幕快照 2019-06-21 上午11.12.04.png" alt><br><img src="Tone-Mapping-屏幕快照 2019-06-21 上午11.12.39.png" alt><br>然后利用Karush-Kuhn-Tucker (KKT)方法来优化计算得到s数组的取值，这样就可以直接求解整个tone mapping的逻辑了，至于具体的kkt方法有兴趣的同学可以自行去查找了或者直接refer论文去看细节。<br>这个方法最后的效果还是很惊艳的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/20/Tone-Mapping/" data-id="ck337q4i6005e1cfyr59ccaoq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Basic/">Basic</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/15/Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking/" class="article-date">
+  <time datetime="2019-06-15T03:09:02.000Z" itemprop="datePublished">2019-06-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking/">Lightweight Real-time Makeup Try-on in Mobile Browsers with Tiny CNN Models for Facial Tracking</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/abs/1906.02260" target="_blank" rel="noopener">https://arxiv.org/abs/1906.02260</a><br>一篇主要做轻量级Landmark应用的论文，整体novelty有限，主要是在MobileNetV2的基础上实现了一个轻量级的Facial Landmark模型，在iPhone XR上可以实现20ms的inference速度</p>
+<p>论文中所用的模型结构整体是一个Two Stage的逻辑， 出发点其实和之前看的一篇landmark machine论文很像，第一阶段出一个比较糙的heatmap来标识landmark点大概的位置，第二阶段再基于第一阶段的结果crop出小的patch继续refine：<br><img src="Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking-屏幕快照 2019-06-14 下午12.55.35.png" alt></p>
+<p>几个需要明确的点：</p>
+<ol>
+<li>模型的主体主要参考MobileNetV2，大量使用Inverted Residual Block</li>
+<li>ROI Crop主要是参考Mask RCNN用ROI Align取代ROI Pooling从而可以把不同的crop出来的patch concat到一起</li>
+<li>最后通过一组Group Conv得到第二阶段相对于第一阶段的offset heatmap，两个阶段最后的输出加和就是最后的结果了</li>
+</ol>
+<p>另外需要提及的就是Loss的计算，论文没有用标注的heatmap之间计算loss的方式，而是根据每一个heatmap上的分布计算出具体的(x,y)值，最后直接监督最后的坐标：<br><img src="Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking-屏幕快照 2019-06-20 上午11.26.39.png" alt><br>结果方面：<br>下表算是简单的ablation study：<br><img src="Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking-屏幕快照 2019-06-20 上午11.27.00.png" alt><br>下表是和LAB的比较，整体还是有差距的：<br><img src="Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking-屏幕快照 2019-06-20 上午11.27.27.png" alt><br>最后是速度的测试：<br><img src="Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking-屏幕快照 2019-06-20 上午11.27.49.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/15/Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking/" data-id="ck337q4gp002q1cfy7zoj887s" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Improving-Landmark-Localization-with-Semi-Supervised-Learning" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/10/Improving-Landmark-Localization-with-Semi-Supervised-Learning/" class="article-date">
+  <time datetime="2019-06-10T05:56:47.000Z" itemprop="datePublished">2019-06-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/10/Improving-Landmark-Localization-with-Semi-Supervised-Learning/">Improving Landmark Localization with Semi-Supervised Learning</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/abs/1709.01591?context=cs" target="_blank" rel="noopener">https://arxiv.org/abs/1709.01591?context=cs</a><br>这篇论文是关于landmark检测的，作者认为目前公开的数据集中标注landmark终究量比较少，但是标注属性（比如分类）的数据集实际上有很多，因此本论文提出半监督的神经网络模型结合标注landmark的数据集和标注属性的数据集来提高landmark定位的准确性。</p>
+<p><img src="Improving-Landmark-Localization-with-Semi-Supervised-Learning-image002.png" alt><br>上面这张图基本涵盖了这篇论文的全部内容，论文所提方法主要分为三个部分：</p>
+<ol>
+<li>利用标注的landmark数据集来训练CNN模型（图中的S代表S个landmark标注样本）</li>
+<li>Sequential Multi-Tasking：对应上图的第二个示例，就是利用标注属性的数据集来辅助landmark位置的学习，整个模型结构是一个串行的网络结构，下图是更加细致的结构表示，网络的前半段是一个标准的CNN网络，最后的一层feature map在经过soft-argmax之后输出预测的landmark位置，2xn个坐标值又会作为后半段网络的输入，后半段网络整体是一个MLP网络，用来预测Image的属性（图中的M代表M个属性标注样本）；<br><img src="Improving-Landmark-Localization-with-Semi-Supervised-Learning-image003.png" alt></li>
+<li>Equivariant Landmark Transformation（ELT）：这一部分对应上图的第三个示例，是一个无监督的网络结构。这一部分主要是增强网络对图片各种旋转变换的鲁棒性，网路结构的设计出发点是，变换矩阵T作用于图片I产生的图像I’在经过网络后得到的预测landmark L’应该和图片I经过网络得到的landmark L经过T作用后的landmark 保持一致，因此本质是一个无监督的处理过程。</li>
+<li>那么综合上面三部分，整个模型的loss就可以被定义为以下这个公式，D为image和对应attribute组成的pair list，K为landmark数量， ˜Lk, Lk (I ) and S分别是landmark GT、landmark预测值、标注landmark的样本量，公式的前两部分分别上图的第二、第三部分的网络的loss，第三部分是上图第一部分网络的loss：<br><img src="Improving-Landmark-Localization-with-Semi-Supervised-Learning-屏幕快照 2019-06-25 下午2.05.21.png" alt><br>论文在6个不同的数据集上做了对比实验，下图是在人脸landmark数据集MultiPIE上做的对比实验：<br><img src="Improving-Landmark-Localization-with-Semi-Supervised-Learning-image005.png" alt><br><img src="Improving-Landmark-Localization-with-Semi-Supervised-Learning-屏幕快照 2019-06-25 下午2.06.10.png" alt></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/10/Improving-Landmark-Localization-with-Semi-Supervised-Learning/" data-id="ck337q4gk002g1cfyljro9nmo" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Seeing-Small-Faces-from-Robust-Anchor’s-Perspective" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/05/Seeing-Small-Faces-from-Robust-Anchor’s-Perspective/" class="article-date">
+  <time datetime="2019-06-05T05:57:06.000Z" itemprop="datePublished">2019-06-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/05/Seeing-Small-Faces-from-Robust-Anchor’s-Perspective/">Seeing Small Faces from Robust Anchor’s Perspective</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/pdf/1802.09058.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1802.09058.pdf</a><br>这篇论文是关于anchor的设计，论文提出了一些anchor设计的策略来检测小脸。下图(a)是作者统计的传统基于anchor的模型在不同人脸大小下的recall，下图(b)则是作者将所有的人脸按大小分组，然后计算每一个组里每张人脸与anchor的最大IoU，对group中所有的max IoU取均值就是图(b)的average IoU。通过统计分析作者认为之所以对于小脸recall比较低的情况是因为小脸和初始化的anchor IoU较小，因此论文提出EMO Score来评估gt和anchor之间的联系并提出了一些anchor设计的策略。</p>
+<p><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image002.png" alt></p>
+<ol>
+<li>Expected Max Overlapping Scores（EMO）：（x，y）是人脸中心的坐标，H，W分别是图片的高宽，p（x , y）则是概率密度函数，后半部分则是max IoU的计算，EMO描述的是一个anchor可以match到一个face的期望。<br><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image003.png" alt><br>作者以下图为例，假设人脸(中心为x)和左上角的anchor（中心为 +）拥有最大的IoU，那么人脸中心的取值范围就是图示的x’、y’小矩形，假设anchor中心的stride为Sa那么x’= y’= Sa / 2， 取anchor大小为lxl所以EMO:<br><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image004.png" alt><br>右下图则给出了公式中变量Sa、l的曲线图，l越大EMO越大、Sa越小EMO越大<br><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image005.png" alt><br><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image006.png" alt><br>根据EMO的分析，论文提出了一些anchor设计的策略：</li>
+<li>Stride Reduction with Enlarged Feature Maps：减小anchor 的stride Sa和增大feature map的scale是等价的，因为它们与原图的关系是一致的。论文给出了三种增大feature map scale的网络结构，分别是Bilinear Upsampling、Bilinear Upsampling with Skip Connetction以及空洞卷积，upsampling的实现则是利用deconv layer。<br><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image007.png" alt></li>
+<li>Extra Shifted Anchors：通过增加辅助的anchor来降低Sa，下图(a)是目前的基本anchor设计，图(b)是在原来对角anchor的中心加入辅助anchor，从而得到Sa ^2 = Sf ^2 / 2,图(c)则是在b的基础上在水平、竖直两个anchor的中点再加入两组辅助anchor将Sa降到原来的一半。<br><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image008.png" alt><br>最后的效果：<br><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image009.png" alt></li>
+<li>Face Shift Jittering：在训练过程中每一次迭代都随机移动图片中的人脸（整张图片平移，对应的脸也相应平移），以此来增加某一些小脸和anchor的IoU。</li>
+<li>Hard Face Compensation：max IoU始终低于阈值的人脸被称为hard faces，对于每一个hard face则按照IoU从大到小依次取前N个anchor作为positive（论文中通过实验取N为5）。<br>最后的实验效果：<br><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image010.png" alt><br>在不同图片大小上的表现：<br><img src="Seeing-Small-Faces-from-Robust-Anchor’s-Perspective-image011.png" alt></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/05/Seeing-Small-Faces-from-Robust-Anchor’s-Perspective/" data-id="ck337q4hx004s1cfyq02hjxk1" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Style-Aggregated-Network-for-Facial-Landmark-Detection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/01/Style-Aggregated-Network-for-Facial-Landmark-Detection/" class="article-date">
+  <time datetime="2019-06-01T05:50:45.000Z" itemprop="datePublished">2019-06-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/01/Style-Aggregated-Network-for-Facial-Landmark-Detection/">Style Aggregated Network for Facial Landmark Detection</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Dong_Style_Aggregated_Network_CVPR_2018_paper.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_cvpr_2018/papers/Dong_Style_Aggregated_Network_CVPR_2018_paper.pdf</a><br>这篇论文主要想解决的问题是不同的图片风格对landmark定位的影响，比如论文中给出的例子对于同一张图片的不同风格（原图、灰度图、以及加入光照的图片）通过嘴部特写可以看到明显的差别。因此论文提出 Style-Aggregated Network (SAN) 整合不同的图片风格来更好的检测人脸lmk.<br><img src="Style-Aggregated-Network-for-Facial-Landmark-Detection-image002.png" alt></p>
+<p>SAN结构可以分成两个部分：</p>
+<ol>
+<li>Style-Aggregated Face Generation Module：这一部分论文主要利用CycleGAN来进行Style transfer主要做法是对于给定的一个数据集，利用PhotoShop将其转化成Light、Gray、Sketch三种风格的图片，加上原来的数据集总共就四类风格的数据集，这四类的数据集再作为resnet-152的输入训练出一个4分类的分类器，网络最后global average pooling的输出被视为风格特征表示，因此原数据集的风格特征在经过聚类之后就可以得到图片风格的label，这是论文对没有标注的数据集进行标注的方式，最后训练CycleGAN并将不同的风格图片相融合得到最后的style-aggregated人脸。<br><img src="Style-Aggregated-Network-for-Facial-Landmark-Detection-image003.png" alt></li>
+<li>Facial Landmark Prediction Module：这个模块主要是标准的CNN网络结构，论文中的结构示意图写的很清楚，Prediction module接受原图和上一步产生的style-aggregated图作为输入，在经过一段CNN网络提取特征之后以cascade的形式经过三个阶段（FC，Fully-Convolution）不断的refine landmark位置信息，由于模块里加入了Pooling层，因此最后的size是小于原图的所以最后的输出是通过 bicubic interpolation插值得到所有的位置信息。<br><img src="Style-Aggregated-Network-for-Facial-Landmark-Detection-image004.png" alt><br>实验对比，可以发现效果还比较明显：<br><img src="Style-Aggregated-Network-for-Facial-Landmark-Detection-image005.png" alt></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/01/Style-Aggregated-Network-for-Facial-Landmark-Detection/" data-id="ck337q4i100521cfy8ru0mszd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Deep-Regionlets-for-Object-Detection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/25/Deep-Regionlets-for-Object-Detection/" class="article-date">
+  <time datetime="2019-05-25T05:48:28.000Z" itemprop="datePublished">2019-05-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/25/Deep-Regionlets-for-Object-Detection/">Deep Regionlets for Object Detection</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="http://arxiv.org/abs/1712.02408" target="_blank" rel="noopener">http://arxiv.org/abs/1712.02408</a><br>论文主要将regionlet的概念引入到CNN网络结构中提出了一个新的物体检测模型，检测模型主要分为两个部分：</p>
+<ol>
+<li>Region Selection Network：这一部分主要从RPN网络生成的bounding box中生成一些区域（Region），Region的生成借助STN网络（三层FC，6维输出）学习到的仿射变换矩阵来实现，因此这一部分输出的Region形状不一定是矩形，初始化时Region是整个boudding box的均分小矩形；</li>
+<li>Deep Regionlet Learning： 这一部分主要用来生成Regionlet以及对应的特征表示，Regionlet同样通过学习仿射变换矩阵从Region中生成，只是Regionlet最终的特征还借助于论文提出的Gating Network（多层FC） 来学习Rgionlet每一个位置的权重，最终两者的乘积会作为最后的输出特征。网络最后会接入Pooling层来融合特征。<br><img src="Deep-Regionlets-for-Object-Detection-image002.png" alt><br><img src="Deep-Regionlets-for-Object-Detection-image003.png" alt><br>在coco、voc上的实验结果：<br><img src="Deep-Regionlets-for-Object-Detection-image004.png" alt></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/25/Deep-Regionlets-for-Object-Detection/" data-id="ck337q4ej001j1cfyvcboli36" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Regionlets-for-Generic-Object-Detection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/21/Regionlets-for-Generic-Object-Detection/" class="article-date">
+  <time datetime="2019-05-21T05:44:36.000Z" itemprop="datePublished">2019-05-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/21/Regionlets-for-Generic-Object-Detection/">Regionlets for Generic Object Detection</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="http://www.xiaoyumu.com/s/PDF/Regionlets.pdf" target="_blank" rel="noopener">http://www.xiaoyumu.com/s/PDF/Regionlets.pdf</a><br>这是一个传统的用于物体检测的方法，论文的主要贡献是提出了regionlet的概念以及基于regionlet的物体检测方法论文定义物体检测中有三个范围概念：Bounding Box、Region、Regionlet，Bounding Box就是目标候选框，Region是用于Bounding Box的特征提取，位于Bounding Box内，作者认为Region的粒度过大不足以表示局部的特征，因此在Region内部提出更小的范围Regionlet：<br><img src="Regionlets-for-Generic-Object-Detection-image002.png" alt></p>
+<p>基于Regionlet的检测模型分为两个部分：</p>
+<ol>
+<li>提取每一个Regionlet的特征：这一步通常用HOG、LBP等特征来表示；</li>
+<li>融合每一个Regionlet的特征：对于Regionlet r，通过第一步我们可以得到他的特征T(r)，对于Region R利用下面的公式可以得到R具体的特征表示，算法从regionlet特征中选择一个一维特征（行或列），并从中选择特征最强的那个作为R的一个一维特征，具体的选择方式则通过boosting 模型来学习，文中采用RealBoost最后利用从regionlet中抽取到的特征来训练boosting分类器来选择最合适的bounding box。<br><img src="Regionlets-for-Generic-Object-Detection-image003.png" alt><br><img src="Regionlets-for-Generic-Object-Detection-image004.png" alt><br>具体的实验结果，方法提出的比较早所以实验结果可能并没有实际的参考价值：<br><img src="Regionlets-for-Generic-Object-Detection-image005.png" alt></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/21/Regionlets-for-Generic-Object-Detection/" data-id="ck337q4hl00441cfysgzatsa1" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Object-Detection-in-Video-with-Spatiotemporal-Sampling-Networks" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/17/Object-Detection-in-Video-with-Spatiotemporal-Sampling-Networks/" class="article-date">
+  <time datetime="2019-05-17T05:35:09.000Z" itemprop="datePublished">2019-05-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/17/Object-Detection-in-Video-with-Spatiotemporal-Sampling-Networks/">Object Detection in Video with Spatiotemporal Sampling Networks</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/pdf/1803.05549.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1803.05549.pdf</a><br>这是ECCV2018 关于物体检测的一篇论文,论文主要提出一种时空采样网络STSN来提高视频中的物体检测效果。论文出发点还是整合多帧的信息来提高当前帧的检测效果，论文提出的STSN结构和FGFA比较类似，基本都会涉及到backbone网络提取特征、特征聚合等操作.</p>
+<p>论文主要的贡献在于Spatiotemporal Feature Sampling，对于给定的帧I以及临近帧的范围K，I分别和K个临近帧形成pair作为STSN的输入，输入的两帧在经过Defornable CNN（基于ResNet-101）之后将输出concat到一起作为Spatiotemporal Feature Sampling 的输入，Spatiotemporal Feature Sampling部分同样利用Deformable CNN得到最后的offset field再结合临近帧的feature map经过一层deformable convolutional 得到最后的采样特征，所有pair采样之后得到的特征经过特征聚合作为detector的输入进行物体检测。STSN特征聚合部分和FGFA保持一致，大体流程论文中有比较简洁的示意。<br><img src="Object-Detection-in-Video-with-Spatiotemporal-Sampling-Networks-image001.png" alt><br>量化结果：<br><img src="Object-Detection-in-Video-with-Spatiotemporal-Sampling-Networks-image002.png" alt><br>效果图：<br><img src="Object-Detection-in-Video-with-Spatiotemporal-Sampling-Networks-image003.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/17/Object-Detection-in-Video-with-Spatiotemporal-Sampling-Networks/" data-id="ck337q4h000351cfyj90gj00h" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VID/">VID</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Flow-Guided-Feature-Aggregation-for-Video-Object-Detection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/12/Flow-Guided-Feature-Aggregation-for-Video-Object-Detection/" class="article-date">
+  <time datetime="2019-05-12T05:13:15.000Z" itemprop="datePublished">2019-05-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/12/Flow-Guided-Feature-Aggregation-for-Video-Object-Detection/">Flow-Guided Feature Aggregation for Video Object Detection </a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/pdf/1703.10025.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1703.10025.pdf</a><br>这篇论文是MSRA daijifeng组的研究工作，主要提出了一种神经网络结构来进行视频中的物体识别，视频中的物体检测典型的特征就是有些帧的物体因为运动模糊、遮挡、奇怪的pose导致难以检测，但是这个帧的附近帧中可能物体是处于一个正常的状态，因此论文考虑通过整合多帧信息来提高物体检测的效果，从而提出了FGFA (flow-guided feature aggregation) 网络。</p>
+<p>下面这张图是简单的case，可以比较直接的描述论文想要解决的问题：<br><img src="Flow-Guided-Feature-Aggregation-for-Video-Object-Detection-屏幕快照 2019-06-25 下午1.14.23.png" alt><br>FGFA整个模型可以分成四个部分：</p>
+<ol>
+<li>Flow network： 这一部分主要利用Flying Chairs Dataset预训练的FlowNet;</li>
+<li>Feature network：这一部分主要利用ResNet-50、ResNet101和Deformable CNN，在基础上对模型结构做了一定的修改去掉了最后的average pooling、fc以及一些其他细节操作;</li>
+<li>Embedding network：这一部分包含三个卷积层：1x1x512、3x3x512、1x1x2048;</li>
+<li>Detection network：这一部分主要利用RFCN网络;</li>
+</ol>
+<p>模型大体的Pipeline是对于当前帧I，给定临近帧的范围K，那么首先利用Feature network对临近帧进行特征提取，对于每一个临近帧J用Flow network计算与帧I的flow field，再利用双线性warp函数整合flow field和帧J对应的feature map进行flow-guided warp，最后结果将作为帧I特征聚合的一部分。帧I特征的聚合主要涉及权重矩阵的计算，权重矩阵的计算主要利用Embedding network对flow-guided warp的结果和原始的feature map进行特征整合，然后利用输出的特征计算对应的权重矩阵，具体的计算过程论文中的伪代码写的比较清楚，最后聚合所有2K个临近帧的特征作为Detection network的输入得到最后的检测结果.<br>伪代码：<br><img src="Flow-Guided-Feature-Aggregation-for-Video-Object-Detection-屏幕快照 2019-06-25 下午1.16.13.png" alt><br>整个PipeLine的描述：<br><img src="Flow-Guided-Feature-Aggregation-for-Video-Object-Detection-image003.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/12/Flow-Guided-Feature-Aggregation-for-Video-Object-Detection/" data-id="ck337q4fe001v1cfyp1ap5klt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VID/">VID</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Flownet-Learning-optical-flow-with-convolutional-networks" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/10/Flownet-Learning-optical-flow-with-convolutional-networks/" class="article-date">
+  <time datetime="2019-05-10T05:30:53.000Z" itemprop="datePublished">2019-05-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/10/Flownet-Learning-optical-flow-with-convolutional-networks/">Flownet: Learning optical flow with convolutional networks</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="http://openaccess.thecvf.com/content_iccv_2015/papers/Dosovitskiy_FlowNet_Learning_Optical_ICCV_2015_paper.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_iccv_2015/papers/Dosovitskiy_FlowNet_Learning_Optical_ICCV_2015_paper.pdf</a><br>这是一篇ICCV2015的论文，主要是利用CNN来进行光流的计算，在视频的相关应用中通常会涉及到光流的概念，可参考Stanford CS131了解相关内容。论文主要提出了两种CNN结构：</p>
+<ol>
+<li>FlowNetSimple：直接将输入的两帧叠加到一起输入网络，经过一段CNN网络后得到最后的feature map， 但Pooling操作会使feature map的size通常小于原图，所以论文中通过refinement实现到原图size的转换。</li>
+<li>FlowNetCorr：不同于前者，这个网络模型是将两帧分别输入网络，经过CNN特征提取后将两者的feature map合并到一起，合并的方式是利用correlation layer ，correlation layer对输入的两个feature map进行类似卷积的操作，假设区块大小为(2k + 1) * (2k  + 1)，两个feature map中对应的中心点为x1、x2，correlation值就按以下公式计算，与卷积不同的地方就是没有filter，而是两个区块直接相乘。如果约束x1在另一个feature map上的相关范围为D，那么correlation layer就可以得到w x h x D^2大小的输出。之后再经过一段CNN网络进行特征抽取。<br><img src="Flownet-Learning-optical-flow-with-convolutional-networks-image001.png" alt></li>
+<li>两个模型在最后阶段都会涉及到refinement，refinement部分主要通过upconvolutional 操作来扩展feature map，只是每一层的输入除了上一层的feature map之外还会结合特征抽取部分相同size的feature map，这样在考虑High-Level特征信息的同时也会考虑局部的相关信息。<br><img src="Flownet-Learning-optical-flow-with-convolutional-networks-image002.png" alt><br><img src="Flownet-Learning-optical-flow-with-convolutional-networks-image003.png" alt><br>数据方面因为没有足够的训练数据，作者构造了Flying Chairs数据集，图片背景来自Flickr，前景为3D椅子模型。<br><img src="Flownet-Learning-optical-flow-with-convolutional-networks-image004.png" alt><br>最后的效果图：<br><img src="Flownet-Learning-optical-flow-with-convolutional-networks-image005.png" alt></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/10/Flownet-Learning-optical-flow-with-convolutional-networks/" data-id="ck337q4fn001y1cfyiz5kavm3" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VID/">VID</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Pose-Invariant-3D-Face-Alignment" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/01/Pose-Invariant-3D-Face-Alignment/" class="article-date">
+  <time datetime="2019-05-01T14:42:04.000Z" itemprop="datePublished">2019-05-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/01/Pose-Invariant-3D-Face-Alignment/">Pose-Invariant 3D Face Alignment </a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Jourabloo_Pose-Invariant_3D_Face_ICCV_2015_paper.pdf" target="_blank" rel="noopener">https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Jourabloo_Pose-Invariant_3D_Face_ICCV_2015_paper.pdf</a><br>利用3D模型来处理大Pose Landmark问题的一篇文章，整体还是follow 3DMM的那一套pipeline，只是因为这篇论文出的相对比较早，对于参数的学习是利用一般的回归模型来级联回归，整体在不同Pose下还是有一定效果的。不过和整个pipeline的设计有关速度比较慢。</p>
+<p>下图是论文中描述的整体Pipeline：<br><img src="Pose-Invariant-3D-Face-Alignment-屏幕快照 2019-04-24 下午11.31.33.jpg" alt><br>整体可以分为这么几个主要部分：<br><strong>第一是3D模型的抽象</strong><br>这一部分和3DMM是一致的，任意人脸的描述被定义成平均脸和delta的和：<br><img src="Pose-Invariant-3D-Face-Alignment-屏幕快照 2019-05-29 下午10.43.41.png" alt><br>3D Landmark到2D Landmark的映射被定义为U = MS, 其中M为弱视角投影的参数.所以求解人脸的3D模型就会被转化成参数P = {M,p}的求解<br>那么通常我们对3D/2D人脸的标注只会涉及到Landmark点的坐标,没有办法得到M和p的gt，所以论文中也具体说明了M和p的gt的生成。首先定义具体的目标函数，那么对于理想的gt函数J应该为0，所以只要想办法最小化这个函数就行，具体计算的时候实际上是采用了类似启发式规则的方法，先让p为0，然后去求最优的M，然后再固定M去求最优的P，以此逐步迭代直到前后两次的值之间的delta很小，那么这个时候的M和p就是最后的gt，（V是关键点的可见性标注）:<br><img src="Pose-Invariant-3D-Face-Alignment-屏幕快照 2019-05-29 下午10.44.07.png" alt><br><strong>第二部分就是具体的模型训练</strong><br>关于具体参数的学习论文中所提的方式是在cascade的每一个阶段都出两个回归模型来分别回归M和p, 特征的提取是用的HOG特征，其他似乎没有什么特殊的:<br><img src="Pose-Invariant-3D-Face-Alignment-屏幕快照 2019-05-29 下午10.44.42.png" alt><br>论文中所提模型同时还出了点的可见性与否，但是实际上在预测的时候点的可见性是算出来的而不是模型直接预测出来的…具体可以看论文中的详细说明<br><img src="Pose-Invariant-3D-Face-Alignment-屏幕快照 2019-05-29 下午10.45.07.png" alt><br>综合整个Pipeline的逻辑：<br><img src="Pose-Invariant-3D-Face-Alignment-屏幕快照 2019-05-29 下午10.45.40.png" alt><br>至于在Benchmark上的结果，对于不同的Pose效果还是有的，不过在AFW上整体似乎差于TCDCN：<br><img src="Pose-Invariant-3D-Face-Alignment-屏幕快照 2019-05-29 下午10.46.06.png" alt><br>这篇论文另一个比较有趣的现象就是当对每一个landmark点进行分别评估NME的时候会发现面部的边界点误差很大，几乎是其他关键点的2倍，我们最近在做的时候也发现有同样的问题，因为面部边界很难有明确的语意定义，所以这个现象很难避免，对于这个问题CVPR2019的一篇semantic alignment论文还是很有参考意义的：<br><img src="Pose-Invariant-3D-Face-Alignment-屏幕快照 2019-05-29 下午10.46.31.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/01/Pose-Invariant-3D-Face-Alignment/" data-id="ck337q4h7003i1cfyyyd19equ" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/3D/">3D</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/20/Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression/" class="article-date">
+  <time datetime="2019-04-20T13:50:07.000Z" itemprop="datePublished">2019-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/20/Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression/">Adaptive Wing Loss for Robust Face Alignment via Heatmap Regression</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/abs/1904.07399" target="_blank" rel="noopener">https://arxiv.org/abs/1904.07399</a><br>最新挂出来的关于人脸landmark的论文，可以理解为整合wing loss + look at boundary进行的优化，wing loss在cvpr2018提出的时候是直接应用在回归landmark点坐标，作者想将其应用到heatmap出点的逻辑上因而提出了adaptive wing loss，同时在网络中引入boundary的信息来辅助模型的训练，在benchmark上的表现还是很不错的，部分指标可以和wing loss、lab拉开比较大的差距。</p>
+<p>这篇论文的核心是提出了adaptive wing loss的概念，基于heatmap出点的方法作者认为模型需要focus在两个主要的部分，一个是前景区域，另外一个是比较难的背景区域，比较难的背景区域定义为前景区域附近的背景，具体的划分论文中也给了一个简单的示例：<br><img src="Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression-屏幕快照 2019-05-29 下午10.52.16.png" alt><br>因此作者在设计adaptive wing loss的时候也考虑了heatmap上不同pixel的重要性，那么为了更好的进行模型的训练，理想中的Loss function可以实现当训练初期gt与dt差距比较大的时候可以快速收敛，梯度可以直观的反馈gt与dt的差距，当gt和dt差距比较小的时候，前景和比较难的的背景pixel需要加大重要性，而其他的背景pixel需要削弱影响因素，所以最终adaptive wing loss具体的形式如下图，其中A = ω(1/(1 + (θ/ε)(α−y)))(α − y)((θ/ε)(α−y−1))(1/ε)，C = (θA−ω ln(1+(θ/ε)α−y))， 实际实验的时候α = 2.1,ω = 14,ε = 1,θ = 0.5<br><img src="Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression-屏幕快照 2019-04-18 下午10.50.38.png" alt><br>几个细节需要考虑：loss的第一部分指数为α-y，这个参数就是控制了不同pixel可以表现不同的重要性，比如越接近高斯分布的中心这个指数越小，否则越大，loss的第二部分当差距比较大的时候loss是一个常数可以比较块的收敛。<br>另外为了突出对gt的优化，作者提出了一个weigthed loss map的概念，本质就是对loss加权：<br><img src="Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression-屏幕快照 2019-04-18 下午11.28.31.jpg" alt><br><img src="Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression-屏幕快照 2019-04-18 下午11.30.26.png" alt><br>此外作者也参考了Look at boundary论文的做法将landmark组成的轮廓引入到网络中，感觉像是辅助监督，论文中是说了用coorconv来encode边缘的信息，具体细节论文也没有给出：<br><img src="Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression-屏幕快照 2019-04-18 下午8.36.11.png" alt><br>实验结果还是很高的：<br><img src="Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression-屏幕快照 2019-04-18 下午11.36.21.png" alt><br><img src="Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression-屏幕快照 2019-04-18 下午11.36.27.png" alt><br>作者对基于heatmap出点的方式所进行的loss设计的思考还是很有参考意义的，最后做出来的点也很高，感觉可以尝试</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/20/Adaptive-Wing-Loss-for-Robust-Face-Alignment-via-Heatmap-Regression/" data-id="ck337q4d1000k1cfy1jro2xxg" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Spatial-Transformer-Networks" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/10/Spatial-Transformer-Networks/" class="article-date">
+  <time datetime="2019-04-10T05:21:15.000Z" itemprop="datePublished">2019-04-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/10/Spatial-Transformer-Networks/">Spatial Transformer Networks</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/pdf/1506.02025.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1506.02025.pdf</a><br>这是一篇NIPS 2015的文章，主要提出了STN网络结构直接的赋予了网络对于各种变换的不变性。<br>STN网络主要分为三个部分：</p>
+<ol>
+<li>Localisation Network：一个子网络-用来学习变换参数θ ，θ的大小则和具体的变换有关，比如一般的仿射变换就是6维的参数，子网络的形式可以是FC也可以是CNN结构。</li>
+<li>Parameterised Sampling Grid：这一部分负责将目标feature map和 源 feature map的像素之间形成映射，主要计算目标feature map的每一个位置在源feature map上对应的位置 TG。<br><img src="Spatial-Transformer-Networks-image001.png" alt></li>
+<li>Differentiable Image Sampling：这一部分主要根据Parameterised Sampling Grid生成的TG和源feature map信息采样得到目标feature map.<br><img src="Spatial-Transformer-Networks-image002.png" alt><br>一些实验结果：<br><img src="Spatial-Transformer-Networks-image003.png" alt><br><img src="Spatial-Transformer-Networks-image004.png" alt></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/10/Spatial-Transformer-Networks/" data-id="ck337q4i200541cfyij3c80rd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Classic/">Classic</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/04/Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection/" class="article-date">
+  <time datetime="2019-04-04T05:42:12.000Z" itemprop="datePublished">2019-04-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/04/Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection/">Semantic Alignment: Finding Semantically Consistent Ground-truth for Facial Landmark Detection</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/abs/1903.10661" target="_blank" rel="noopener">https://arxiv.org/abs/1903.10661</a><br>CVPR2019最新挂出来的一篇关于人脸landmark的论文，论文的出发点是觉得目前landmark定位精度受限于部分标注点”语意”模糊有关,比如说脸部轮廓点或者眼部轮廓点不像眼球、鼻尖这些点有明确的语意定义，因此标注引入的误差就相对影响比较大。所以作者从这方面入手在模型每次迭代的时候去寻找这样一个“真正”的gt来监督网络的训练，此外为了来修正一些偏移比较厉害的点，作者又引入了一个子网络来refine整体的landmark。这篇论文整体个人感觉很有意义。</p>
+<p>首先作者是利用4个级联的Hourglass结构网络来进行landmark点定位的，下图是作者可视化语意明确和语意不明确点在输出heatmap上的结果，在2D空间可以发现，语意比较明确的点比如眼球中心点它的分布更加接近高斯分布，在3D空间这些点的分布更加的锐利，而语意不明确的点比如轮廓点在3D空间就会形如一个“flat hat”：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-屏幕快照 2019-04-03 下午11.53.38.png" alt><br>同时当网络已经差不多收敛的时候如果继续训练也会发现那些语意不明确的点依然在gt附近来回抖动，这也一定程度上验证了语意不明确导致标注带来的noise。<br>从网络输出的heatmap上出landamrk点可以将landmark点理解为一种数据分布，w为网络权重、x为输入图片、o为landmark点：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-3043ff99afa634151fd3e0f785d7b1dbfbdd0c63.png" alt><br>那么既然gt也不是那么的准确，作者不妨就假设目前存在这样一个真正的gt，不会引入任何的语意不确定性，那么上述的公式可以表示为，y为定义的真正的gt, 那么o就可以理解为是y的一个观测值：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-77c089022e93074fcd6ae6a27cff0e58657635b3.png" alt><br>为了缩小后续的搜索空间作者做了一个合理的假定：y<sup>k</sup>存在于o<sup>k</sup>的附近，所以可以用高斯相似度来衡量这种先验概率：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-e1fa30cf7bebe4160d61ca0066ab6f041513d19c.png" alt><br>而至于公式的后半段似然概率作者认为对于模型输出的heatmap，如果位置(x, y)周围的region越符合高斯分布，那么点(x, y )就更接近y这样的真正的gt, 所以作者就利用两个分布（预测分布，实际分布(y的分布)）之间的相似度来度量这个似然概率，Φ为抠patch的操作，E为真正gt的分布：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-b8ba7247a1f5ce534923f05834a51f56ae2145cd.png" alt><br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-9d0211bc90065c7cb20afa4bd494d72283d417cc.png" alt><br>那么通过简单的转化就可以把前面的优化目标转换为，N(ok)可以理解为以点ok为中心的一小部分区域，其实也就是y的搜索空间：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-屏幕快照 2019-04-04 下午12.58.56.jpg" alt><br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-9774dd8b68edeb975c901d5289f5bed290e42e57.png" alt><br>那么在实际做的时候，作者将整个方法的优化分成两部分来进行，第一步是固定模型的参数W，去搜索最好的y，因为一旦w固定除了yk其他都是已知的，所以直接去搜索y<sup>k</sup>,搜索空间实际应该是o<sup>k</sup>为中心的17x17大小的区域，那么第一个iteration，标注结果就是gt，在二个iteration，前一个iteration搜索得到的y就是gt，依次类推。第二步是固定y去训练模型的参数W，然后这一步就是具体的模型训练了，训练目标为：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-d29dc1db9c88f3c357b807b8cf756a1e40ffb5db.png" alt><br>因为从模型的输出直接出landmark点没有完全的考虑脸的整个形态，更多的是考虑了单个点的相关信息，所以作者最后加了一个GHCU的模块来refine landmark点：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-屏幕快照 2019-04-04 下午1.10.55.png" alt><br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-屏幕快照 2019-04-04 下午1.12.28.png" alt><br>300-W上的实验结果：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-屏幕快照 2019-04-04 下午1.13.23.png" alt><br>AFLW的实验结果：<br><img src="Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection-屏幕快照 2019-04-04 下午1.14.02.png" alt><br>感觉作者的想法还是很make sense的，目前我们正在用的landmark标注数据也存在这样的语意模糊导致引入标注误差的问题，但是这种标注误差带来的影响还是和实际的任务比较相关，从论文给出的例子来看，预测的landmark点通常在gt附近有一定的抖动，如果这种抖动是贴合轮廓这个影响就相对比较小</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/04/Semantic-Alignment-Finding-Semantically-Consistent-Ground-truth-for-Facial-Landmark-Detection/" data-id="ck337q4hy004u1cfy7z3yripu" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Object-Detection-based-on-Region-Decomposition-and-Assembly" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/25/Object-Detection-based-on-Region-Decomposition-and-Assembly/" class="article-date">
+  <time datetime="2019-03-25T06:25:39.000Z" itemprop="datePublished">2019-03-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/25/Object-Detection-based-on-Region-Decomposition-and-Assembly/">Object Detection based on Region Decomposition and Assembly</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL: <a href="https://arxiv.org/abs/1901.08225" target="_blank" rel="noopener">https://arxiv.org/abs/1901.08225</a><br>AAAI2019的一篇关于检测的论文，论文主要的出发点是想解决遮挡场景下的物体检测问题，整个逻辑基于Faster RCNN的框架来做，主要思路是先把proposal分part分别来提取特征然后再通过一定的方法将其merge到一起来突出可见部分的特征，从而得到更可信的信息。</p>
+<p>论文所提方法整体基于Faster RCNN的逻辑，具体分成两个部分MRP和RDA，下面是具体的示意图：<br><img src="Object-Detection-based-on-Region-Decomposition-and-Assembly-图片 1.jpg" alt><br><strong>Multi-scale region proposal (MRP) network</strong><br>这一部分做法其实很简单，就是给RPN的输出proposal给一些scale来丰富porposal的覆盖程度，论文中用了[0.5, 0.7, 1, 1.2, 1.5]共5个scale：<br><img src="Object-Detection-based-on-Region-Decomposition-and-Assembly-屏幕快照 2019-03-16 下午5.47.30.jpg" alt><br><strong>Region decomposition and assembly (RDA) network</strong><br>这一部分可以理解为整个方法的核心了，主要分成Decomposition 和 Assembly两个部分， Decomposition 部分将经过ROI Pooling之后的feature map x2然后将其等分成上下左右四部分，每一个部分都会通过conv提取依次特征然后分别merge，merge的方法实际就是element wise max，从而可以显著一些可见区域的特征。这样4个part最终还是会merge为一个feature map，megre完的结果最后再跟全图的feature map在做一次同样的操作得到最后的output，整个逻辑的话图示很清楚：<br><img src="Object-Detection-based-on-Region-Decomposition-and-Assembly-屏幕快照 2019-03-16 下午5.52.33.png" alt><br><strong>实验结果</strong><br><img src="Object-Detection-based-on-Region-Decomposition-and-Assembly-屏幕快照 2019-03-16 下午5.56.03.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/25/Object-Detection-based-on-Region-Decomposition-and-Assembly/" data-id="ck337q4gz00331cfy33iopskg" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Mask-Scoring-R-CNN" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/19/Mask-Scoring-R-CNN/" class="article-date">
+  <time datetime="2019-03-19T14:54:28.000Z" itemprop="datePublished">2019-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/19/Mask-Scoring-R-CNN/">Mask Scoring R-CNN</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/abs/1903.00241" target="_blank" rel="noopener">https://arxiv.org/abs/1903.00241</a><br>论文的出发点很直观，就是为了优化在目前的一些instance segmentation的方法中用classification score来标注一个mask的质量，这个其实很显然和实际应用场景是完全不一致的，比如论文中给出的例子：<br><img src="Mask-Scoring-R-CNN-屏幕快照 2019-03-19 下午10.56.07.png" alt></p>
+<p>所以为了解决这个问题，作者以mask rcnn为依托在其基础上增加了 MaskIoU 分支用来出mask和gt之间的IoU，而mask的质量分S<sub>mask</sub> = S<sub>cls</sub> * S<sub>mask_IoU</sub>：<br><img src="Mask-Scoring-R-CNN-屏幕快照 2019-03-19 下午11.01.42.png" alt><br>具体MaskIoU分支的逻辑图例给的比较清楚，mask分支的输出通过max pooling的作用之后和RoIAlign的结果进行concat作为MaskIoU分支的输入，经过conv和fc之后得到最后的C个iou，maskiou的计算也比较简单，mask分支的输出卡一个阈值0.5就可以实现二值化，二值化后的mask可以和gt可以比较简单的计算出IoU。</p>
+<p>针对MaskIoU分支输入的形式作者也做了好几个尝试：<br><img src="Mask-Scoring-R-CNN-屏幕快照 2019-03-22 下午8.54.04.png" alt><br>最后显示直接相加效果是最好的：<br><img src="Mask-Scoring-R-CNN-屏幕快照 2019-03-22 下午8.55.55.png" alt></p>
+<p>最后的点：<br><img src="Mask-Scoring-R-CNN-屏幕快照 2019-03-22 下午8.53.56.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/19/Mask-Scoring-R-CNN/" data-id="ck337q4gw002v1cfy83fhrvkg" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Segmentation/">Segmentation</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Region-Proposal-by-Guided-Anchoring" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/18/Region-Proposal-by-Guided-Anchoring/" class="article-date">
+  <time datetime="2019-03-18T13:59:46.000Z" itemprop="datePublished">2019-03-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/18/Region-Proposal-by-Guided-Anchoring/">Region Proposal by Guided Anchoring</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/abs/1901.03278" target="_blank" rel="noopener">https://arxiv.org/abs/1901.03278</a><br>CVPR2019的一篇对anchor进行优化的论文，主要将原来需要预先定义的anchor改成直接end2end学习anchor位置和size。首先anchor的定义通常为(x, y, w, h) (x, y为中心点)，formulate一下：<br><img src="Region-Proposal-by-Guided-Anchoring-屏幕快照 2019-03-18 下午10.33.58.png" alt><br>因此本文所提的guided anchoring利用两个branch分别预测anchor的位置和w、h：<br><img src="Region-Proposal-by-Guided-Anchoring-屏幕快照 2019-03-18 下午10.28.29.png" alt></p>
+<p>guided anchoring的主要内容有如下几点：<br><strong>Anchor Location Prediction</strong><br>逻辑很简单，利用一个1x1的conv将输入的feature map转换成 W x H x 1的heatmap，通过卡阈值t来得到anchor可能出现的位置，在训练的时候可以通过gt的框来生成heatmap的groudtruth，negtive、positive、ignore的pixel定义论文中有比较详细的介绍。<br><img src="Region-Proposal-by-Guided-Anchoring-屏幕快照 2019-03-18 下午10.46.37.png" alt><br><strong>Anchor Shape Prediction</strong><br>这一部分逻辑和上一部分一样，也是通过一个1x1的conv将输入的feature map转换成W x H x 2的heatmap，只是考虑到如果直接回归w和h范围太广会比较不稳定，作者做了一定的转化将预测值约束到[-1,1],实际使用的时候再映射回去，s为feature map的stride，sigma为8：<br><img src="Region-Proposal-by-Guided-Anchoring-屏幕快照 2019-03-18 下午10.41.23.png" alt><br>需要注意的是和传统的anchor设置不一样的是，guider anchoring在某一个pixel下只会设置一个anchor。<br>这一部分的训练其实会是比较需要特别注意的地方，论文中使用来IoU loss来监督，但是这样存在一个问题，因为这个分支本身是预测w，h的，所以IoU Loss的计算无法知道match的具体gt，作者提出的方法是sample 9组常见的w、h，这样就可以利用这9组w、h构建9个不同的anchor去和gt匹配，IoU最大的匹配gt就是当前需要去计算IoU Loss的gt，然后直接用heatmap的w、h和这个gt计算IoU Loss即可：<br><img src="Region-Proposal-by-Guided-Anchoring-屏幕快照 2019-03-18 下午10.48.54.png" alt><br><strong>Anchor-Guided Feature Adaptation</strong><br>这一个模块主要是针对feature有可能和anchor不一致而提出的，因为对于原先预定义的anchor而言，每一个pixel对应位置的anchor其实都是一样的，所以也就无所谓feature的异同，但是guided anchoring逻辑下不同的pixel有可能anchor的size差别很大，仍然像之前那样直接出cls和reg很显然是不合适的，所以作者就提出了adaptation的模块，利用deformable conv来处理不同形状的anchor对应的feature。</p>
+<p>论文的最后作者也提了一下因为GA-RPN可以得到很多高质量的porposal，通过提高阈值可以进一步优化检测的效果。<br>实验结果：<br><img src="Region-Proposal-by-Guided-Anchoring-屏幕快照 2019-03-18 下午11.21.29.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/18/Region-Proposal-by-Guided-Anchoring/" data-id="ck337q4hj00411cfyxw8r26mw" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Grid-RCNN" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/15/Grid-RCNN/" class="article-date">
+  <time datetime="2019-03-15T05:45:59.000Z" itemprop="datePublished">2019-03-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/15/Grid-RCNN/">Grid RCNN</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/abs/1811.12030" target="_blank" rel="noopener">https://arxiv.org/abs/1811.12030</a><br>CVPR2018的一篇论文，从某种程度上来说是借鉴Bottom Up的方法来优化目前检测方面的一些问题，主要出发点还是希望检测器出的框能尽可能的准，所以相比较一般的检测器直接出四维的坐标信息，Grid RCNN则是出9个点，用9个点的信息来表示一个bbox。<br>具体的PipeLine如下：<br><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.04.35.png" alt></p>
+<p><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.04.42.png" alt><br>Grid RCNN本身是基于RCNN这一套Two Stage的逻辑来做的，所以相比较Faster RCNN主要就是Fast RCNN那个分支做了一些优化，主要几个方面：<br><strong>Grid Guided Localization</strong><br>用NxN个均匀的点来表示一个框而不再是直接回归两个顶点坐标，这样做相比较FC回归点的好处是Conv保留了物体的一些空间位置信息，有助于物体的定位，而类似的 Grid RCNN相比较CornerNet之类基于脚点的检测模型好处在于CornerNet是直接出两个顶点的信息，但是实际上对于一个框的两个顶点它实际上多数处在一个backbroud上，实际可利用的有价值的信息很有限，因此Grid RCNN以及ExteamNet实际上在一定程度上都缓解了这个问题，那么通过Heatmap得到NxN个点之后(共NxN个Heatmap)就可以通过简单的坐标转换得到在原图中NxN个点的坐标，而将NxN个点转换称框的时候作者也提出了自己的逻辑：<br>（ (Px,Py) is the position of upper left corner of the proposal in input image, wp and hp are width and height of proposal, wo and ho are width and height of output heatmap）<br><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.11.08.png" alt><br>本质是用四条边上N个点坐标的加权平均作为边的坐标：<br><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.11.11.png" alt><br><strong>Grid Points Feature Fusion</strong><br>这一部分可以理解为对Grid RCNN的优化了，作者认为NxN点之间是存在比较强的关联信息的，点与点之间相辅相成可以达到共同促进的作用，所以提出了fusion的逻辑：<br><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.14.19.png" alt><br>做法也很粗暴直接，就是直接将最近点的heatmap通过<strong>3层5x5的conv提取特征</strong>之后直接和当前点的heatmap<strong>取sum</strong>:<br><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.17.14.png" alt><br>那么对于<strong>最近点</strong>的定义论文中也给的很清楚，比如距离为1，那就是相邻的所有点，距离为2，那就是所有距离当前点2个单位长度的点综合来fusion，上面的示意图给的比较清楚，对于当前点的<strong>最近点</strong>被定义为’source point’<br><strong>Extended Region Mapping</strong><br><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.19.26.png" alt><br>这个优化主要是针对RPN给出的Proposal不够准，导致定义的NxN个点其实并不能包含检测的物体，那么最简单的方法就是把proposal认为放大，但是这样人为放大之后会严重影响检测的效果，尤其是对小物体而言，所以作者认为考虑到整个CNN的运算过程中感受野是足够的，所以就可以把这些个proposal<strong>看作</strong>是4倍于原来Proposal大小,那么我们就需要直接改坐标的映射关系就好：<br><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.23.47.png" alt><br>这个可以和上面提供的原公式做一个简单的化简其实就是在原来的基础上加了一个偏移量来smooth这个操作，其实整体感觉也好理解，虽然proposla给的框比较小，但是因为感受野的原因最后抽取的特征是可以包含object的信息的，所以就可以直接理解为这个点的坐标偏移相比正常的proposal来说更大，所以需要重新计算加一个偏移量。<br>结果上也是不错的：<br><img src="Grid-RCNN-屏幕快照 2019-03-16 下午3.32.52.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/15/Grid-RCNN/" data-id="ck337q4g000241cfyes8rsm3j" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/03/Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks/" class="article-date">
+  <time datetime="2019-03-03T09:17:21.000Z" itemprop="datePublished">2019-03-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/03/Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks/">Wing Loss for Robust Facial Landmark Localisation with Convolutional Neural Networks</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/abs/1711.06753" target="_blank" rel="noopener">https://arxiv.org/abs/1711.06753</a><br>CVPR2018一篇关于人脸Landmark的论文，这篇论文主要是关于人脸关键点的定位，因为论文的重点是loss function和data augmentation所以论文所实验的模型结构是比较简单的CNN结构来实验：<br><img src="Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks-image002.png" alt></p>
+<p>论文主要的研究内容：</p>
+<ul>
+<li><strong>Wing Loss</strong>：论文首先通过实验直观的反映了常见的L1 Loss、L2 Loss、Smooth L1 Loss的优劣，通过分析不同损失函数的走势，作者认为landmark定位任务中需要更加重视中小范围误差的那些样本(small or medium range error)：<br><img src="Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks-image003.png" alt><br><img src="Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks-image004.png" alt><br>因此论文提出了wing loss损失函数，利用对数函数来增强小误差那些样本的表现，其中C是个常数 C = W - Wln(1 + W / e)，至于最终两个变量的取值只能一一尝试，论文也给出了具体的尝试，W = 10 , e = 2最终表现最好：<br><img src="Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks-image007.png" alt><br><img src="Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks-image008.png" alt></li>
+<li><strong>Pose-based data balancing</strong>：PDB主要用来解决大Pose表现不好的问题，作者认为 大 pose表现不好的根本原因是样本数据不均衡，因此提出了PDB的策略。论文首先利用Procrustes Analysis和PCA将数据集中不同的人脸转化到一维向量空间中用来分析样本pose的分布（具体操作逻辑还需要仔细看，论文说的比较少还不是很清楚），比如对于AFLW数据集可以得到下面的分布图，然后根据具体的样本分布对于那些占比比较小的pose类别通过基本的data augmentation方法来增加这类样本的数量(其实就是直接多复制几份这样的数据):<br><img src="Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks-image009.png" alt></li>
+<li><strong>Two-stage landmark localisation</strong>：这一优化比较常见，利用cascade的逻辑讲landmark的定位分到两阶段CNN网络中，第一阶段就是上面提到的CNN-6，第二阶段则是CNN-7，与CNN-6的差别就是输入从64x64x3变到了128x128x3，增加了一层卷积层，卷积核的个数也略有增加，其他没有什么特殊的设计，最后cascade的逻辑和PDB数据增强带来的效果，CNN-6/7就代表two stage的模型：<br><img src="Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks-image010.png" alt><br><img src="Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks-image011.png" alt></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/03/Wing-Loss-for-Robust-Facial-Landmark-Localisation-with-Convolutional-Neural-Networks/" data-id="ck337q4i8005k1cfywwzoj2qd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Loss/">Loss</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/03/Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression/" class="article-date">
+  <time datetime="2019-03-03T02:43:07.000Z" itemprop="datePublished">2019-03-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/03/Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression/">Generalized Intersection over Union: A Metric and A Loss for Bounding Box Regression</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL：<a href="https://arxiv.org/abs/1902.09630" target="_blank" rel="noopener">https://arxiv.org/abs/1902.09630</a><br>这是CVPR2019的一篇论文。本论文主要提出了GIoU的概念来优化IoU在评估或者IoU Loss在训练中的一些问题<br>这是利用Ln-Loss来优化bbox回归问题的常见bug，不同的overlap程度在Ln-loss看来都一样，但是实际上对于IoU或者GIoU确实不一样的，很显然后者更合理：</p>
+<p><img src="Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression-屏幕快照 2019-03-03 上午11.01.57.png" alt></p>
+<p>然后就是IoU的不足，第一是对于IoU为0的情况也就是两个box没有交集的情况无法处理，IoU Loss在这种情况下没有梯度的回传。第二就是对于IoU的评价指标对于overlap的方式没有什么体现，比如下图中的示例，IoU都是0.33，但是它们的链接方法是不一样的，或者说对于box回归的任务来说我们的接受度也是不一样的，很显然下图是依次递减，恰好GIoU刚好可以做到这一点：<br><img src="Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression-屏幕快照 2019-03-03 上午11.05.36.png" alt><br>接下来就是GIoU的计算，C(AUB)可以理解为两框在convex之内的空白部分了,GIoU计算的方法主要claim一点，更整齐的overlap方法会导致空白部分很小所以GIoU更大：<br><img src="Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression-屏幕快照 2019-03-03 上午11.08.11.png" alt><br>GIoU Loss：<br><img src="Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression-屏幕快照 2019-03-03 上午11.09.13.png" alt><br>不过从结果上来看，GIoU似乎只对YoloV3这样anchor相对比较稀疏的模型比较有效，也算比较符合GIoU的定义吧：<br><img src="Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression-屏幕快照 2019-03-03 上午11.11.37.png" alt><br><img src="Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression-屏幕快照 2019-03-03 上午11.11.42.png" alt><br><img src="Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression-屏幕快照 2019-03-03 上午11.11.50.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/03/Generalized-Intersection-over-Union-A-Metric-and-A-Loss-for-Bounding-Box-Regression/" data-id="ck337q4fw00221cfybvnbh2ku" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/02/Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points/" class="article-date">
+  <time datetime="2019-03-02T03:04:25.000Z" itemprop="datePublished">2019-03-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/02/Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points/">Bottom-up Object Detection by Grouping Extreme and Center Points</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL:<a href="https://arxiv.org/pdf/1901.08043.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1901.08043.pdf</a><br>Codebase:<a href="https://github.com/xingyizhou/ExtremeNet" target="_blank" rel="noopener">https://github.com/xingyizhou/ExtremeNet</a><br>一篇比较有意义的论文，主要是用bottom up的方法来做检测的问题，整个工作是基于ECCV2018的cornernet来做的，对于一个框ExtremeNet会出5个点，四个边界点和一个中心点，中心点主要是用来做group。下图是标注的示例图：</p>
+<p><img src="Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points-屏幕快照 2019-03-02 下午4.52.39.png" alt></p>
+<p>论文的整体框架也很简单，主要都是基于CornerNet的code进行改的，对于一张图片出5个点的heatmap和四个offset的heatmap：<br><img src="Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points-屏幕快照 2019-03-02 下午4.44.43.png" alt><br>当拿到最后的5点heatmap和4个offset之后，对于点的instance group方法也很简单甚至比较暴力，首先会设置一个阈值T<sub>p</sub>，那么4个边界点heatmap上大于T<sub>p</sub>的话就会被记为一个candidate，论文中也说了在 coco数据集上一般会有40个左右，那么匹配方法很简单，暴力O(N^4)轮询，然后对于当前的4个点，直接通过取平均的方式得到中心点，然后按这个中心点的位置去中心点的heatmap上取值，如果这个值大于某个阈值T<sub>c</sub>，那么就认为这是一个合法的框：<br><img src="Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points-屏幕快照 2019-03-02 下午4.45.10.png" alt><br>这样利用bottom up进行detection任务的整个框架大体就是如此，那么这种方法也有两个比较明显的问题：</p>
+<ul>
+<li>Ghost box：假设有三个一样大小、水平或者竖直等距离排布的物体，那么利用extremenet来预测的时候应该会出现4个比较高置信度的框！，因为外围两个框的四个边界点可以组成比较高置信度的框同时中心点还落在中间框的中心点会大概率满足阈值，论文中将这种box称之为ghost box，解决方法比较直接，如果出现一个框内部三个框的score之后大于本身这个大框(‘ghost box’)score的3倍，那么就将这个大框的置信度/2，这样有助于在解析来的NMS中remove掉这个box。</li>
+<li>Edge aggregation：假设对于方方正正的物体，比如汽车等，那么由于它的边界点并不是很唯一，它的整条边的点都可以作为边界点，所以后果就是整条边的confidence都不高影响最后的box的生成，因此论文中作者借鉴来cornernet中的pooling的一些想法，对给定的一个extreme point在水平和竖直两个方向以单调递减(heatmap的score)的方法一直遍历直到找到一个局部最小值，过程中遍历的点score的和会作为加权的一部分算到当前extreme point的置信度上：<br>单调递减过程中的点：<br><img src="Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points-屏幕快照 2019-03-03 上午10.20.37.png" alt><br>extreme point score的计算：<br><img src="Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points-屏幕快照 2019-03-03 上午10.20.32.png" alt><br>具体的case：<br><img src="Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points-屏幕快照 2019-03-03 上午10.22.36.png" alt><br>作者同时也把这个方法应用到instance seg的任务中，只是标注略微粗糙利用一个八边形来做mask，具体细节不赘述，具体示例：<br><img src="Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points-屏幕快照 2019-03-03 上午10.12.15.png" alt><br><strong>实验结果还是很不错的：</strong><br><img src="Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points-屏幕快照 2019-03-03 上午10.12.06.png" alt></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/02/Bottom-up-Object-Detection-by-Grouping-Extreme-and-Center-Points/" data-id="ck337q4da000p1cfyg7olawud" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bottom-Up/">Bottom_Up</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-PFLD-A-Practical-Facial-Landmark-Detector" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/02/PFLD-A-Practical-Facial-Landmark-Detector/" class="article-date">
+  <time datetime="2019-03-02T02:20:45.000Z" itemprop="datePublished">2019-03-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/02/PFLD-A-Practical-Facial-Landmark-Detector/">PFLD: A Practical Facial Landmark Detector</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL: <a href="https://arxiv.org/abs/1902.10859" target="_blank" rel="noopener">https://arxiv.org/abs/1902.10859</a><br>相关主页：<a href="https://sites.google.com/view/xjguo/fld" target="_blank" rel="noopener">https://sites.google.com/view/xjguo/fld</a><br>这两天刚挂出来的关于landmark的论文，论文中对300w数据集报的点是要比LAB、SAN等CVPR2018论文的点是要高的，在845手机上也可以达到140FPS的速度，论文所提方法主要在设计加权的loss，比如考虑人脸的yaw、pitch、roll等信息来加权loss。</p>
+<p>论文首先总结了一下目前landmark检测的一些问题，比如局部遮挡、局部光照、人脸Pose、数据不均衡等，同时计算平台对算力的限制也是一个需要关注的点。除了最后的减少模型size是通过尝试不同的backbone网络，其他的论文所提问题可以理解为都集中在Loss的设计：<br><img src="PFLD-A-Practical-Facial-Landmark-Detector-屏幕快照 2019-03-02 上午10.22.31.png" alt><br>而整个Loss的设计又可以理解为加权的权重该以什么逻辑加上去，上式是论文中所提的Loss：<br>m是人脸数，n为landmark数，Wnc是当前脸所属的类别c所占总脸数的比例的倒数，theta为具体的角度，k为yaw、roll、pitch，dnm为距离计算的方式比如L1，L2.至此Loss的具体含义就不用赘述了；<br><img src="PFLD-A-Practical-Facial-Landmark-Detector-屏幕快照 2019-03-02 上午10.22.27.png" alt><br>这个是论文中所提出的整个网络结构：<br>backbone基于mobilenet v2，为了得到人脸的yaw、pitch、roll等值（默认送进网络的图经过align所以不需要考虑其他的状态信息），作者在backbone的基础上又加了一个分支来专门出这几个值，至于这几个值gt的生成是通过mean face直接计算得到的。</p>
+<p>在300w数据集上的表现（ION和IPN是不同的距离norm方式）：<br><img src="PFLD-A-Practical-Facial-Landmark-Detector-屏幕快照 2019-03-02 上午10.22.48.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/02/PFLD-A-Practical-Facial-Landmark-Detector/" data-id="ck337q4h100371cfy4r0cv8d9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Landmark/">Landmark</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-S3FD-Single-Shot-Scale-invariant-Face-Detector" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/28/S3FD-Single-Shot-Scale-invariant-Face-Detector/" class="article-date">
+  <time datetime="2019-02-28T12:18:26.000Z" itemprop="datePublished">2019-02-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/28/S3FD-Single-Shot-Scale-invariant-Face-Detector/">S3FD: Single Shot Scale-invariant Face Detector</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL: <a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_S3FD_Single_Shot_ICCV_2017_paper.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_S3FD_Single_Shot_ICCV_2017_paper.pdf</a><br>ICCV2017的一篇论文，主要研究小人脸的检测，作者针对目前基于anchor的检测器对小人脸表现不好的现象分析了几个可能的原因，并针对性的提出了具体的解决方法，比如新的anchor匹配策略、max out backgroud label等方法。</p>
+<p>作者首先提出了目前小人脸的难点：<br><img src="S3FD-Single-Shot-Scale-invariant-Face-Detector-屏幕快照 2019-03-02 上午10.08.37.png" alt><br>论文中也正是从这四点出发来解决小人脸的检测问题。</p>
+<p><img src="S3FD-Single-Shot-Scale-invariant-Face-Detector-屏幕快照 2019-03-02 上午10.07.42.png" alt><br>上图是论文中提出的基于VGG16的检测模型，比较特别的地方是Normalization Layer、conv3_3输出结果为Nm+4 而不是一般的2 + 4 以及 anchor设计的策略：</p>
+<ul>
+<li>Normalization Layer是考虑到Conv3_3 - Conv5_3 feature scale差异比较大，所以对activation做了norm来加速训练。</li>
+<li>Conv3_3作为最底层的detection layer，主要负责小人脸的检测，对于小人脸的检测通常需要设置比较多的anchor，这就会导致比较验证的正负样本不均衡的现象，于是作者就提出了max-out backgroud label的逻辑，cls的那个分支会预测N + 1个类别，1就是face，N就是backgroud，然后取最大的backgroud的score去参与计算loss以此来提高cls分支的分类能力，毕竟background归为一类很难去精确分类。<br>max out backgroud逻辑：<br><img src="S3FD-Single-Shot-Scale-invariant-Face-Detector-屏幕快照 2019-03-02 上午10.19.42.png" alt></li>
+<li>至于anchor的设计策略，可以细看论文中的table：<br><img src="S3FD-Single-Shot-Scale-invariant-Face-Detector-屏幕快照 2019-03-02 上午10.09.36.png" alt><br>anchor / stride 恒为4， 这样做的好处就是不同scale保证采样密度一致（两个anchor之间的overlap都是1/4anchor的大小）从而不同的人脸能基本匹配相同数目的anchor。而anchor具体的scale设置也是和一些观察经验有关的，比如论文提到的erf，有效感受野，因为对于图片的不同位置可以理解为权重是不一样的，比如靠近图片的中心他会有很大概率被其他的kernel重复计算，而边缘的pixel则相对被更加稀疏的计算，所以论文提到了ERF的概念，anchor也是针对ERF设计的：<br><img src="S3FD-Single-Shot-Scale-invariant-Face-Detector-屏幕快照 2019-03-02 上午10.09.40.png" alt><br>因为anchor的匹配是根据IoU来的，那么对于一些face还是会不可避免的匹配不上anchor，所以论文就提出了一个补充匹配的逻辑来缓解这个问题，方法也很简单，用基本的匹配逻辑匹配完一轮之后，对于剩下没有匹配的那些小脸取IoU 大于0.1的anchor，排序取top N补充进来。这个想法相对比较直观吧。<br>具体的实验结果：<br><img src="S3FD-Single-Shot-Scale-invariant-Face-Detector-屏幕快照 2019-03-02 上午10.14.05.png" alt></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/28/S3FD-Single-Shot-Scale-invariant-Face-Detector/" data-id="ck337q4hs004f1cfyosvml9qp" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-谈一谈模型量化" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/22/谈一谈模型量化/" class="article-date">
+  <time datetime="2019-02-22T03:59:19.000Z" itemprop="datePublished">2019-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/22/谈一谈模型量化/">谈一谈模型量化</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>说到量化，首先需要弄清楚我们为什么需要量化？为什么可以量化？<br>对于为什么需要量化可以从两个实际的需求来说，第一，对于一般float32存储的模型来说通常硬盘占用相对会比较大，那么在现有的一些端上比如手机端对模型的内存占用是有很明显的限制的，将float32的模型转化为int8的模型就可以带来75%存储的节约，因此在某些场景下模型的量化也是一个必然的选择。第二，从模型的运算效率上来说，int8只有一个字节，float32有四个字节，所以int8参数的获取只需要25%float32的内存带宽，因此可以更好地使用缓存，同时每个时钟周期执行更多操作的SIMD操作。另外DSP等计算单元本身对int8计算很友好，int8模型的使用可以提高速度同时可以降低功耗。<br>至于为什么可以量化，可以这么理解，我们知道CNN网络在对图片进行各种处理的时候比如识别、比如分类、比如检测，都有比较强的鲁棒性，对噪声的兼容性相对比较高。那么落到量化这件事情上来说，可能带来的问题就是精度的损失，那么其实我们可以把这一部分精度的损失理解为外界带给网络的<strong>“噪声”</strong>,所以结合CNN在具体任务的表现我们有理由相信量化操作给网络带来的精度影响不会那么严重。当然了这算是比较理想的状态了，其实在具体的实验过程中对于目前已经做的比较轻量的网络，量化对模型的精度还是会有比较大的影响的。所以量化通常也是根据具体的任务需要做的一个选择。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/22/谈一谈模型量化/" data-id="ck337q4ia005p1cfy5vod00ei" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Quantization/">Quantization</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-You-Only-Look-Once-Unified-Real-Time-Object-Detection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/03/You-Only-Look-Once-Unified-Real-Time-Object-Detection/" class="article-date">
+  <time datetime="2019-02-03T14:46:47.000Z" itemprop="datePublished">2019-02-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/03/You-Only-Look-Once-Unified-Real-Time-Object-Detection/">You Only Look Once: Unified, Real-Time Object Detection</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL: <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf" target="_blank" rel="noopener">https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf</a><br><strong>重读经典系列第一篇：YOLO</strong><br>YOLO系列是另一个经典的Single Stage的检测器：<br><img src="You-Only-Look-Once-Unified-Real-Time-Object-Detection-屏幕快照 2019-02-03 下午10.49.49.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/03/You-Only-Look-Once-Unified-Real-Time-Object-Detection/" data-id="ck337q4i9005n1cfyepijx0ld" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Classic/">Classic</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-SSD-Single-Shot-MultiBox-Detector" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/03/SSD-Single-Shot-MultiBox-Detector/" class="article-date">
+  <time datetime="2019-02-03T14:09:53.000Z" itemprop="datePublished">2019-02-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/03/SSD-Single-Shot-MultiBox-Detector/">SSD: Single Shot MultiBox Detector</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>URL: <a href="https://arxiv.org/pdf/1512.02325.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1512.02325.pdf</a><br>Code: <a href="https://github.com/weiliu89/caffe/tree/ssd" target="_blank" rel="noopener">https://github.com/weiliu89/caffe/tree/ssd</a><br><strong>重读经典系列第一篇：SSD</strong><br>SSD是很经典的Single Stage检测网络，至今仍有很多的工作是基于SSD在改进。<br>不同于典型的Two stage检测网络将proposal的生成放在RPN网络来做，然后后续的网络branch基于RPN的结果进行Refine，SSD将Proposal直接放到网络后面的feature map上来做，基本逻辑如下图，实际和FasterRCNN网络生成anchor的逻辑是一模一样的：<br><img src="SSD-Single-Shot-MultiBox-Detector-屏幕快照 2019-02-03 下午10.33.52.png" alt></p>
+<p>至于proposal具体的scale，论文中也是给出具体的公式的，整体其实就是给定最大和最小scale(s<sub>min</sub>, s<sub>max</sub>)，中间的feature map层均匀变化：<br><img src="SSD-Single-Shot-MultiBox-Detector-屏幕快照 2019-02-03 下午10.38.39.png" alt><br>k就是具体的层，m是全部产生proposal的层<br>SSD网络整体的结构目前看来也比较直接，相比较传统的VGG等网络，SSD考虑到multi scale的情况，所以在VGG16 backbone的基础上又引出了N层feature map，每一层feature map的感受野都不一样，作者通过这种方式来实现multi scale的检测，每一个feature map都会出4个offset和一个分类器，回归分支的结果是用中心点坐标（x，y） + w和h来表示一个框：<br><img src="SSD-Single-Shot-MultiBox-Detector-屏幕快照 2019-02-03 下午10.39.31.png" alt><br>训练用到的loss，对于回归用的smooth l1:<br><img src="SSD-Single-Shot-MultiBox-Detector-屏幕快照 2019-02-03 下午10.43.17.png" alt><br><img src="SSD-Single-Shot-MultiBox-Detector-屏幕快照 2019-02-03 下午10.43.21.png" alt><br>一些benchmark上的结果：<br><img src="SSD-Single-Shot-MultiBox-Detector-屏幕快照 2019-02-03 下午10.42.36.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/03/SSD-Single-Shot-MultiBox-Detector/" data-id="ck337q4hw004q1cfyrh5bm7td" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Classic/">Classic</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Detection/">Detection</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-How-Does-Batch-Normalization-Help-Optimization" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/31/How-Does-Batch-Normalization-Help-Optimization/" class="article-date">
+  <time datetime="2019-01-31T06:34:31.000Z" itemprop="datePublished">2019-01-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/31/How-Does-Batch-Normalization-Help-Optimization/">How Does Batch Normalization Help Optimization?</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/31/How-Does-Batch-Normalization-Help-Optimization/" data-id="ck337q4gh002b1cfyupbitw65" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algorithm/">Algorithm</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering/">Engineering</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Paper-Reading/">Paper Reading</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3D/">3D</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic/">Basic</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bottom-UP/">Bottom UP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BottomUp/">BottomUp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bottom-Up/">Bottom_Up</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classic/">Classic</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classification/">Classification</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DeepLab/">DeepLab</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Detection/">Detection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Engineering/">Engineering</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Face/">Face</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hardware/">Hardware</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/KeyPoint/">KeyPoint</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Landmark/">Landmark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Learning-Strategy/">Learning Strategy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Loss/">Loss</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mimick/">Mimick</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mobile/">Mobile</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mutual-learning/">Mutual learning</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Platform/">Platform</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pose/">Pose</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Quantization/">Quantization</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Regularization/">Regularization</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SOT/">SOT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segmentation/">Segmentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Template/">Template</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tools/">Tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Track/">Track</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tracking/">Tracking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VID/">VID</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/3D/" style="font-size: 10px;">3D</a> <a href="/tags/Basic/" style="font-size: 10px;">Basic</a> <a href="/tags/Bottom-UP/" style="font-size: 10px;">Bottom UP</a> <a href="/tags/BottomUp/" style="font-size: 16.67px;">BottomUp</a> <a href="/tags/Bottom-Up/" style="font-size: 10px;">Bottom_Up</a> <a href="/tags/Classic/" style="font-size: 13.33px;">Classic</a> <a href="/tags/Classification/" style="font-size: 10px;">Classification</a> <a href="/tags/DeepLab/" style="font-size: 10px;">DeepLab</a> <a href="/tags/Detection/" style="font-size: 20px;">Detection</a> <a href="/tags/Engineering/" style="font-size: 10px;">Engineering</a> <a href="/tags/Face/" style="font-size: 15px;">Face</a> <a href="/tags/Hardware/" style="font-size: 10px;">Hardware</a> <a href="/tags/KeyPoint/" style="font-size: 13.33px;">KeyPoint</a> <a href="/tags/Landmark/" style="font-size: 18.33px;">Landmark</a> <a href="/tags/Learning-Strategy/" style="font-size: 10px;">Learning Strategy</a> <a href="/tags/Loss/" style="font-size: 11.67px;">Loss</a> <a href="/tags/Mimick/" style="font-size: 11.67px;">Mimick</a> <a href="/tags/Mobile/" style="font-size: 10px;">Mobile</a> <a href="/tags/Mutual-learning/" style="font-size: 10px;">Mutual learning</a> <a href="/tags/Platform/" style="font-size: 10px;">Platform</a> <a href="/tags/Pose/" style="font-size: 15px;">Pose</a> <a href="/tags/Quantization/" style="font-size: 10px;">Quantization</a> <a href="/tags/Regularization/" style="font-size: 11.67px;">Regularization</a> <a href="/tags/SOT/" style="font-size: 10px;">SOT</a> <a href="/tags/Segmentation/" style="font-size: 16.67px;">Segmentation</a> <a href="/tags/Template/" style="font-size: 10px;">Template</a> <a href="/tags/Tools/" style="font-size: 13.33px;">Tools</a> <a href="/tags/Track/" style="font-size: 11.67px;">Track</a> <a href="/tags/Tracking/" style="font-size: 10px;">Tracking</a> <a href="/tags/VID/" style="font-size: 13.33px;">VID</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/06/28/Look-at-Boundary-A-Boundary-Aware-Face-Alignment-Algorithm/">Look at Boundary: A Boundary-Aware Face Alignment Algorithm</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/28/Quantization-Mimic-Towards-Very-Tiny-CNN-for-Object-Detection/">Quantization Mimic: Towards Very Tiny CNN for Object Detection</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/24/Mimicking-Very-Efficient-Network-for-Object-Detection/">Mimicking Very Efficient Network for Object Detection</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/20/Tone-Mapping/">Tone Mapping</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/15/Lightweight-Real-time-Makeup-Try-on-in-Mobile-Browsers-with-Tiny-CNN-Models-for-Facial-Tracking/">Lightweight Real-time Makeup Try-on in Mobile Browsers with Tiny CNN Models for Facial Tracking</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 DreamHigh<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
