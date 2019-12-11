@@ -2,8 +2,8 @@
 title: 'RMPE: Regional Multi-Person Pose Estimation'
 date: 2018-10-14 23:03:01
 tags:
-  - KeyPoint
-  - Bottom UP
+  - Skeleton
+  - BottomUp
   - Landmark
 ---
 URL: https://arxiv.org/abs/1612.00137

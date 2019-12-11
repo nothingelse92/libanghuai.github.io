@@ -7,13 +7,13 @@ title: Out of Memory
 subtitle: Live and Learn
 description:  Live and Learn 
 keywords:
-author: DreamHigh 
+author: libanghuai
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://libanghuai.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -36,7 +36,7 @@ external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: true 
-relative_link: false
+relative_link: true 
 future: true
 highlight:
   enable: true
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: maupassant 
+theme: Fan 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

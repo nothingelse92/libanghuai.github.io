@@ -3,7 +3,7 @@ title: 'Associative Embedding: End-to-End Learning for Joint Detection and Group
 date: 2018-10-28 23:03:29
 tags:
   - Landmark
-  - KeyPoint
+  - Skeleton
   - BottomUp
 ---
 URL:https://papers.nips.cc/paper/6822-associative-embedding-end-to-end-learning-for-joint-detection-and-grouping.pdf

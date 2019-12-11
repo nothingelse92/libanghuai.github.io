@@ -5,24 +5,24 @@ changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 gitment:
   enable: false ## If you want to use Gitment comment system please set the value to true.
-  owner: libanghuai ## Your GitHub ID, e.g. username
-  repo: libanghuai.github.io ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
-  client_id: 44ff9240b2f61b9f6188 ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret: 6a5bc4a133122cdb796b7c04a3cacd34cb2f6ca7 ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+  owner: ## Your GitHub ID, e.g. username
+  repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
+  client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 gitalk:
   enable: false ## If you want to use Gitment comment system please set the value to true.
-  owner:  libanghuai ## Your GitHub ID, e.g. username
-  repo:  libanghuai.github.io ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
-  client_id: 44ff9240b2f61b9f6188  ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret:  6a5bc4a133122cdb796b7c04a3cacd34cb2f6ca7 ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
-  admin: libanghuai ## Github repo owner and collaborators, only these guys can initialize github issues.
+  owner:  ## Your GitHub ID, e.g. username
+  repo:  ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
+  client_id:  ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret:  ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+  admin:  ## Github repo owner and collaborators, only these guys can initialize github issues.
 valine: ## https://valine.js.org
-  enable: true ## If you want to use Valine comment system, please set the value to true.
-  appid: kJG6YxzEHXemVJF63TTH3GrX-gzGzoHsz ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
-  appkey: o4lqtg6IRJ10QYXGuUJ2YLEC ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
-  notify: true ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
+  enable: false ## If you want to use Valine comment system, please set the value to true.
+  appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+  appkey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+  notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
   verify: false ## Validation code.
-  placeholder: 我来说两句~ ## Comment box placeholders.
+  placeholder: Just so so ## Comment box placeholders.
   avatar: 'mm' ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
   pageSize: 10 ## Number of comments per page.
   guest_info: nick,mail,link ## Attributes of reviewers.
@@ -38,11 +38,11 @@ fancybox: true ## If you want to use fancybox please set the value to true.
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
 shareto: false ## If you want to use the share button please set the value to true, and you must have hexo-helper-qrcode installed.
-busuanzi: true  ## If you want to use Busuanzi page views please set the value to true.
+busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
 wordcount: false ## If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
 canvas_nest:
-  enable: true ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
+  enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
   color: ## RGB value of the color, e.g. "100,99,98"
   opacity: ## Transparency of lines, e.g. "0.7"
   zIndex: ## The z-index property of the background, e.g. "-1"
@@ -70,6 +70,9 @@ menu:
   - page: about
     directory: about/
     icon: fa-user
+  - page: rss
+    directory: atom.xml
+    icon: fa-rss
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
@@ -80,14 +83,22 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 links:
-  - title: Github 
-    url: https://github.com/libanghuai
+  - title: site-name1
+    url: http://www.example1.com/
+  - title: site-name2
+    url: http://www.example2.com/
+  - title: site-name3
+    url: http://www.example3.com/
 
 timeline:
   - num: 1
     word: 2014/06/12-Start
   - num: 2
     word: 2014/11/29-XXX
+  - num: 3
+    word: 2015/02/18-DDD
+  - num: 4
+    word: More
 
 # Static files
 js: js

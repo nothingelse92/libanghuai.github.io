@@ -2,7 +2,7 @@
 title: 'Real-time 2D Multi-Person Pose Estimation on CPU: Lightweight OpenPose'
 date: 2019-01-28 16:12:08
 tags:
-  - KeyPoint
+  - Skeleton
   - Landmark
 ---
 URL: https://arxiv.org/pdf/1811.12004.pdf
