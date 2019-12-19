@@ -3,7 +3,7 @@ title: 'Bottom-up Pose Estimation of Multiple Person with Bounding Box Constrain
 date: 2018-12-24 12:40:54
 tags:
   - Landmark
-  - Pose
+  - Skeleton
   - BottomUp
 ---
 URL: https://arxiv.org/abs/1807.09972

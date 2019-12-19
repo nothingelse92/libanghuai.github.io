@@ -3,6 +3,7 @@ title: 'Cascade R-CNN: Delving into High Quality Object Detection'
 date: 2018-09-24 18:16:03
 tags:
   - Detection
+  - Cascade
 ---
 解决问题：
 目前的检测模型通常需要通过设置IoU阈值来定义Positive和Negative bbox，作者发现最终检测模型的表现和IoU阈值的设置相关，通过下图的c，d可以发现低IoU阈值通常会对低IoU样本表现更好，因为不同IoU阈值下的样本分布不一样，一个IoU阈值很难对所有的样本都有效。因此为了解决这个问题，论文提出了Cascade R-CNN 模型。

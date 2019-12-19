@@ -3,7 +3,7 @@ title: 'MultiPoseNet: Fast Multi-Person Pose Estimation using Pose Residual Netw
 date: 2018-12-24 12:40:27
 tags:
   - BottomUp
-  - Pose
+  - Skeleton
   - Landmark
 ---
 URL: https://arxiv.org/abs/1807.04067

@@ -5,7 +5,7 @@ title: >-
 date: 2019-01-24 17:54:05
 tags:
   - BottomUp
-  - Pose
+  - Skeleton
   - Landmark
 ---
 URL: https://arxiv.org/abs/1803.08225

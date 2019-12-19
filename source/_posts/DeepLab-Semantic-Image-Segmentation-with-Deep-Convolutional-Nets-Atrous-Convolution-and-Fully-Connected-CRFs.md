@@ -5,6 +5,7 @@ title: >-
 date: 2019-01-28 13:17:35
 tags:
   - Segmentation
+  - DeepLab
 ---
 URL: https://arxiv.org/abs/1606.00915
 DeepLab系列的第二篇论文，主要是在DeepLab V1的基础上提出了ASPP的结构来做多尺度的问题。
