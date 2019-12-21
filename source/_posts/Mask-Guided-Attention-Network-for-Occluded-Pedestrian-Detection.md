@@ -3,6 +3,7 @@ title: Mask-Guided Attention Network for Occluded Pedestrian Detection
 date: 2019-12-08 21:49:19
 tags:
   - Pedestrian Detection
+  - Attention
 ---
 URL:https://arxiv.org/pdf/1901.06651.pdf
 
