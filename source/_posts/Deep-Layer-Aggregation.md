@@ -2,7 +2,7 @@
 title: Deep Layer Aggregation
 date: 2018-12-17 20:40:01
 tags:
-  - Detection
+  - Basemodel
 ---
 URL: https://arxiv.org/pdf/1707.06484.pdf
 CVPR2018的一篇关于layer aggregation的论文，论文的motivation是作者觉得目前常见的aggregation方式（FPN、U-Net...）比较shallow，作者希望利用更加deeper的连接方式来更好的融合特征。论文中作者分别提出了IDA和HDA两种连接方式。IDA应用在stage之间，HDA应用在block之间。

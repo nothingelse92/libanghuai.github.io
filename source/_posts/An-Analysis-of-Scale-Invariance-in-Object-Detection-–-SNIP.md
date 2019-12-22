@@ -9,15 +9,17 @@ URL: https://arxiv.org/abs/1711.08189
 
 论文在分析scale invariance问题的时候做了几组实验：
 + **实验一**：训练三个模型CNN-B(224x224作为输入的图)、CNN-S（和CNN-B类似的图片只是针对输入图片的尺寸修改了第一层conv的stride，可以理解为针对输入图的尺寸做的Resolution Specific Classifier）以及CNN-B-FT（224x224输入图预训练模型 + 用低分辨率图片upsample搭配224x224来finetune）。CNN-B在48x48~224x224范围的输入图上效果如下图a，可见效果随分辨率大小逐渐变好，224x224最好。CNN-B-FT的效果也有一定提升。从结果中也可以发现domain shift对模型的影响：
-![51|690x198](./An-Analysis-of-Scale-Invariance-in-Object-Detection-–-SNIP/a.png)
+
+ ![](An-Analysis-of-Scale-Invariance-in-Object-Detection-–-SNIP-屏幕快照 2018-12-04 下午9.28.51.png)
+
 + **实验二**:验证集固定为1400x2000的分辨率
 
-1. 分别训练800x1400和1400x2000的检测模型，1400x2000效果最好，但是提升有限，作者认为是因为提升分辨率有助于小物体的检测但是对于大物体的检测是有坏处的
-2. 训练1400x2000的模型忽略特别大的物体，最后的结果比800x1400的效果更差，因为抛弃了比较多的数据，丢失了variation in appearance and pose
-3. Multi-Scale Training最后的结果和800x1400的效果差不多。作者认为过程中同样出现了过大和过小的物体。
-![43|508x178](./An-Analysis-of-Scale-Invariance-in-Object-Detection-–-SNIP/屏幕快照 2018-12-04 下午9.34.43.png)
+  1. 分别训练800x1400和1400x2000的检测模型，1400x2000效果最好，但是提升有限，作者认为是因为提升分辨率有助于小物体的检测但是对于大物体的检测是有坏处的
+  2. 训练1400x2000的模型忽略特别大的物体，最后的结果比800x1400的效果更差，因为抛弃了比较多的数据，丢失了variation in appearance and pose
+  3. Multi-Scale Training最后的结果和800x1400的效果差不多。作者认为过程中同样出现了过大和过小的物体。
+
+  ![](An-Analysis-of-Scale-Invariance-in-Object-Detection-–-SNIP-截屏2019-12-2123.05.59.png)
+
 针对上面实验的结果论文所提出的SNIP方法想法很直接，可以理解为是Image Pyramid的改进。SNIP通过在训练和inference的时候控制物体到一个固定的scale来保证检测的效果。实验一和实验二的结果也支持来这一点。具体实现的时候针对不同scale的输入，论文中都分别定义了一些proposal的面积范围，网络训练的时候只有落在给定范围内的proposal才会回传梯度。这也是SNIP中Scale Normalization的实际含义：
-![33|690x302](./An-Analysis-of-Scale-Invariance-in-Object-Detection-–-SNIP/屏幕快照 2018-12-04 下午8.39.47.png)
-一些实验结果：
-![10|690x169](./An-Analysis-of-Scale-Invariance-in-Object-Detection-–-SNIP/屏幕快照 2018-12-04 下午9.59.10.png)
-![16|690x259](./An-Analysis-of-Scale-Invariance-in-Object-Detection-–-SNIP/屏幕快照 2018-12-04 下午9.59.16.png)
+
+![](An-Analysis-of-Scale-Invariance-in-Object-Detection-–-SNIP-屏幕快照 2018-12-04 下午9.24.33.jpg)
