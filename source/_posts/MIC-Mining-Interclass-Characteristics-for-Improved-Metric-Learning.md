@@ -23,7 +23,6 @@ ICCV2019一篇关于Metric Learning的论文，Metric Learning相关的工作是
 
 那么所有的图片经过上述的处理之后对于特征集合Z就可以聚类了，假设可以聚成K类{C<sub>1</sub>......C<sub>k</sub>},那么C集合就可以作为E<sub>β</sub>训练的label了！你可以把C集合想像成角度、光照、遮挡等一系列属性。
 
-因为E<sub>β</sub>和E<sub>α</sub>共享f并且end2end训练，所以两者之前会相互影响，两者学习的特征也难免会有overlap，那么为了限制两者分别去学习
-inter-class类间特征和intra-class类内特征，作者也做了一些优化（ Minimizing Mutual Information）。具体可以参考下面这个公式，R是一个小网络用来将E<sub>β</sub>编码的信息映射到E<sub>α</sub>的空间上，⊙就是普通的element wise乘，r代表梯度反转，是对抗学习中常用的一种方式，和实际的需求也比较接近：
+因为E<sub>β</sub>和E<sub>α</sub>共享f并且end2end训练，所以两者之前会相互影响，两者学习的特征也难免会有overlap，那么为了限制两者分别去学习inter-class类间特征和intra-class类内特征，作者也做了一些优化（ Minimizing Mutual Information）。具体可以参考下面这个公式，R是一个小网络用来将E<sub>β</sub>编码的信息映射到E<sub>α</sub>的空间上，⊙就是普通的element wise乘，r代表梯度反转，是对抗学习中常用的一种方式，和实际的需求也比较接近：
 
 ![](MIC-Mining-Interclass-Characteristics-for-Improved-Metric-Learning-截屏2019-12-2423.35.20.png)
