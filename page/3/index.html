@@ -16,7 +16,9 @@ if (isPassword) {
     error: '复制错误',
     noSupport: '浏览器不支持'
   }
-}</script></head><body><canvas id="universe"></canvas><!--#body--><div id="sidebar"><div class="author-info"><div class="author-info-avatar"><img class="author-info-avatar-img" src="/avatar.png"></div><div class="author-info-name">Out of Memory</div><div class="author-info-description">Live and Learn</div><div class="links-buttons"><a class="links-button button-hover" href="https://github.com/libanghuai" target="_blank">GitHub<i class="icon-dot bg-color8"></i></a><a class="links-button button-hover" href="mailto:libanghuai@gmail.com" target="_blank">E-Mail<i class="icon-dot bg-color0"></i></a><a class="links-button button-hover" href="tencent://message/?uin=1185719433&amp;Site=&amp;Menu=yes" target="_blank">QQ<i class="icon-dot bg-color6"></i></a></div><div class="author-info-articles"><a class="author-info-articles-archives article-meta" href="../../archives"><span class="pull-top">日志</span><span class="pull-bottom">91</span></a><a class="author-info-articles-tags article-meta" href="../../tags"><span class="pull-top">标签</span><span class="pull-bottom">32</span></a><a class="author-info-articles-categories article-meta" href="../../categories"><span class="pull-top">分类</span><span class="pull-bottom">2</span></a></div></div></div><div id="main-container"><header><div id="menu-outer"><i class="menu-list-icon fas fa-bars"></i><nav id="menu-inner"><a class="menu-item" href="/">首页</a><a class="menu-item" href="/tags">标签</a><a class="menu-item" href="/categories">分类</a><a class="menu-item" href="/archives">归档</a><a class="menu-item" href="/about">关于</a></nav><div class="right-info"><a class="title-name" href="/">Out of Memory</a><span id="now-time"></span></div></div></header><div id="content-outer"><div id="content-inner"><div id="recent-posts"><!-- each post in page.posts.sort('date', -1).limit(10).toArray()--><!-- config中配置按照什么排序--><div class="recent-post-item"><a class="post-title" href="../../2019/01/14/Learning-to-Track-at-100-FPS-with-Deep-Regression-Networks/">Learning to Track at 100 FPS with Deep Regression Networks</a><div class="container"><time class="button-hover post-date"><i class="fas fa-calendar-alt article-icon" aria-hidden="true"></i> 更新于 2019-12-23</time><div class="button-hover tags"><i class="fa fa-tag article-icon" aria-hidden="true"></i><a class="link-a" href="../../tags/Tracking/">Tracking</a></div></div><div class="post-content"><div class="main-content content"><p>URL:<a href="https://arxiv.org/abs/1604.01802" target="_blank" rel="noopener">https://arxiv.org/abs/1604.01802</a><br>论文主要提出了GOTURN的tracking框架，整体还是比较naive的一些tracking逻辑，下图是GOTURN整个的pipeline:<br><img src="Learning-to-Track-at-100-FPS-with-Deep-Regression-Networks-屏幕快照 2019-01-14 下午10.26.02.png" alt=""></p>
+}</script></head><body><canvas id="universe"></canvas><!--#body--><div id="sidebar"><div class="author-info"><div class="author-info-avatar"><img class="author-info-avatar-img" src="/avatar.png"></div><div class="author-info-name">Out of Memory</div><div class="author-info-description">Live and Learn</div><div class="links-buttons"><a class="links-button button-hover" href="https://github.com/libanghuai" target="_blank">GitHub<i class="icon-dot bg-color9"></i></a><a class="links-button button-hover" href="mailto:libanghuai@gmail.com" target="_blank">E-Mail<i class="icon-dot bg-color4"></i></a><a class="links-button button-hover" href="tencent://message/?uin=1185719433&amp;Site=&amp;Menu=yes" target="_blank">QQ<i class="icon-dot bg-color3"></i></a></div><div class="author-info-articles"><a class="author-info-articles-archives article-meta" href="../../archives"><span class="pull-top">日志</span><span class="pull-bottom">92</span></a><a class="author-info-articles-tags article-meta" href="../../tags"><span class="pull-top">标签</span><span class="pull-bottom">33</span></a><a class="author-info-articles-categories article-meta" href="../../categories"><span class="pull-top">分类</span><span class="pull-bottom">2</span></a></div></div></div><div id="main-container"><header><div id="menu-outer"><i class="menu-list-icon fas fa-bars"></i><nav id="menu-inner"><a class="menu-item" href="/">首页</a><a class="menu-item" href="/tags">标签</a><a class="menu-item" href="/categories">分类</a><a class="menu-item" href="/archives">归档</a><a class="menu-item" href="/about">关于</a></nav><div class="right-info"><a class="title-name" href="/">Out of Memory</a><span id="now-time"></span></div></div></header><div id="content-outer"><div id="content-inner"><div id="recent-posts"><!-- each post in page.posts.sort('date', -1).limit(10).toArray()--><!-- config中配置按照什么排序--><div class="recent-post-item"><a class="post-title" href="../../2019/01/15/High-Performance-Visual-Tracking-with-Siamese-Region-Proposal-Network/">High Performance Visual Tracking with Siamese Region Proposal Network</a><div class="container"><time class="button-hover post-date"><i class="fas fa-calendar-alt article-icon" aria-hidden="true"></i> 更新于 2019-12-23</time><div class="button-hover tags"><i class="fa fa-tag article-icon" aria-hidden="true"></i><a class="link-a" href="../../tags/Tracking/">Tracking</a></div></div><div class="post-content"><div class="main-content content"><p>URL: <a href="http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2951.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2951.pdf</a><br>Siamese-RPN, CVPR2018一篇关于tracking的论文，论文所提方法的整个逻辑还是基于孪生网络来做，整体也可以理解为对Siamese-FC结构的改进，下图是Siamese-RPN的整个Pipeline：<br><img src="High-Performance-Visual-Tracking-with-Siamese-Region-Proposal-Network-屏幕快照 2019-01-15 下午11.31.31.png" alt=""></p>
+<p>Siamese-RPN网络的整个逻辑还是分成两个分支, 上面一个分支针对关键帧，下面一个分支针对检测帧，两个分支本身的参数是共享的，Siamese网络完成对两张输入图片的特征提取，两个分支的输出还会经过上图的Region Proposal Network网络来整合两者的信息.<br>具体做法和RPN网络类似，前一层Siamese网络的每一个分支都会接入两层的conv然后分成两个分支，一支为cls，另一支为reg，关键帧的输出如上图的4×4×(2k×256) 和 4×4×(4k×256)，这两个输出会分别作为对应的检测帧输出的kernel来进行卷积运算（上图中的*号操作）。这两者最后的输出就是检测帧最后的检测结果。<br>那么在得到最后预测的结果时针对tracking的应用场景，作者也提出了一些选框的策略，一是默认物体的移动速度不快，所以只选取靠近中心的anchor：<br><img src="High-Performance-Visual-Tracking-with-Siamese-Region-Proposal-Network-屏幕快照 2019-01-20 上午10.43.46.png" alt=""><br>另外一个做法就是对当前得到的proposal进行重新排名，比如利用cosine window来对距离重点点比较远的候选框进行抑制或者同样基于物体移动速度不快的假设可以默认物体的size变化也不大所以对scale进行penalty，形变比较大的得分会被抑制，具体打分如下，k为超参数，r为proposal的ratio，r’为上一帧的ratio，s和s’则是对应的整体的ratio（输入图片多尺度scale），论文中应该采取的是后者：<br><img src="High-Performance-Visual-Tracking-with-Siamese-Region-Proposal-Network-屏幕快照 2019-01-20 上午10.48.02.png" alt=""><br><strong>实验结果</strong><br>VOT2015:<br><img src="High-Performance-Visual-Tracking-with-Siamese-Region-Proposal-Network-屏幕快照 2019-01-20 上午10.53.58.png" alt=""><br>VOT2016:<br><img src="High-Performance-Visual-Tracking-with-Siamese-Region-Proposal-Network-屏幕快照 2019-01-20 上午10.55.21.png" alt=""><br><img src="High-Performance-Visual-Tracking-with-Siamese-Region-Proposal-Network-屏幕快照 2019-01-20 上午10.55.25.png" alt=""><br>SiamRPN网络相比SiamFC直接出了框的具体坐标位置，感觉对于跟踪的任务更加合理，也避免了SiamFC相对比较繁琐的后处理，在测试集上的效果也是要比SiamFC好一些。</p>
+</div></div><a class="button-hover more" href="../../2019/01/15/High-Performance-Visual-Tracking-with-Siamese-Region-Proposal-Network/#more">阅读全文</a></div><div class="recent-post-item"><a class="post-title" href="../../2019/01/14/Learning-to-Track-at-100-FPS-with-Deep-Regression-Networks/">Learning to Track at 100 FPS with Deep Regression Networks</a><div class="container"><time class="button-hover post-date"><i class="fas fa-calendar-alt article-icon" aria-hidden="true"></i> 更新于 2019-12-23</time><div class="button-hover tags"><i class="fa fa-tag article-icon" aria-hidden="true"></i><a class="link-a" href="../../tags/Tracking/">Tracking</a></div></div><div class="post-content"><div class="main-content content"><p>URL:<a href="https://arxiv.org/abs/1604.01802" target="_blank" rel="noopener">https://arxiv.org/abs/1604.01802</a><br>论文主要提出了GOTURN的tracking框架，整体还是比较naive的一些tracking逻辑，下图是GOTURN整个的pipeline:<br><img src="Learning-to-Track-at-100-FPS-with-Deep-Regression-Networks-屏幕快照 2019-01-14 下午10.26.02.png" alt=""></p>
 <p>GOTURN整个框架是针对连续的两帧来做的，整个框架因此也主要分成两个分支，分别针对当前帧和前一帧，给定当前帧(t)和前一帧(t-1),t-1帧的物体是已知的，比如物体框中心为center(c<sub>x</sub>, c<sub>y</sub>),长宽分别是w、h。那么对于下面一个分支首先会以center为中心，长宽分别是k1w, k1h去抠图，k1这个系数用于控制context信息的量。那么对于上面一个分支，会从同样的位置center作为中心，长宽分别是k2w,k2h去抠图作为当前帧的搜索区域。论文中也提及了一下通常k2 = 2。这两个分支的输出最后会被concat到一起送入一个3层的FC网络，每层FC有4096个神经元，每个分支本身的结构是CaffeNet的前五层。</p>
 <p>那么在具体训练的时候，论文中主要提及了一些数据增强的细节，比如论文就直接说明GOTURN本身在训练的时候就是针对低速运动的物体进行的设计，对于高速运动的物体并不能cover。至于GOTURN对低速运行物体的跟踪也跟论文中提到的数据增强方法有关，模型在具体训练的时候会构造这样的pair对：<br><img src="Learning-to-Track-at-100-FPS-with-Deep-Regression-Networks-屏幕快照 2019-01-14 下午10.43.16.png" alt=""><br><img src="Learning-to-Track-at-100-FPS-with-Deep-Regression-Networks-屏幕快照 2019-01-14 下午10.43.23.png" alt=""><br>其中控制偏移幅度的变量delta服从Laplace分布。</p>
 <p><strong>具体的实验结果</strong><br><img src="Learning-to-Track-at-100-FPS-with-Deep-Regression-Networks-屏幕快照 2019-01-14 下午10.46.49.png" alt=""><br>Ablation Study:<br><img src="Learning-to-Track-at-100-FPS-with-Deep-Regression-Networks-屏幕快照 2019-01-14 下午10.47.31.png" alt=""></p>
@@ -253,112 +255,4 @@ if (isPassword) {
 </ul>
 <configuration><br>        <property><br>                <name>dfs.namenode.secondary.http-address</name><br>                <value>HadoopMaster:50090</value><br>        </property><br>        <property><br>                <name>dfs.replication</name><br>                <value>1</value><br>        </property><br>        <property><br>                <name>dfs.namenode.name.dir</name><br>                <value>file:/usr/local/hadoop/tmp/dfs/name</value><br>        </property><br>        <property><br>                <name>dfs.datanode.data.dir</name><br>                <value>file:/usr/local/hadoop/tmp/dfs/data</value><br>        </property><br></configuration><br><em> mapred-site.xml:需要将mapred-site.xml.template文件重命名<br><configuration><br>        <property><br>                <name>mapreduce.framework.name</name><br>                <value>yarn</value><br>        </property><br>        <property><br>                <name>mapreduce.jobhistory.address</name><br>                <value>HadoopMaster:10020</value><br>        </property><br>        <property><br>                <name>mapreduce.jobhistory.webapp.address</name><br>                <value>HadoopMaster:19888</value><br>        </property><br></configuration>
 </em>   yarn-site.xml:<br><configuration><br><br><!-- Site specific YARN configuration properties --><br>    <property><br>                <name>yarn.resourcemanager.hostname</name><br>                <value>HadoopMaster</value><br>        </property><br>        <property><br>                <name>yarn.nodemanager.aux-services</name><br>                <value>mapreduce_shuffle</value><br>        </property><br></configuration>
-</div></div><a class="button-hover more" href="../../2018/07/20/Build-Hadoop-Spark-Cluster/#more">阅读全文</a></div><div class="recent-post-item"><a class="post-title" href="../../2018/07/19/Build-Jitamin-in-CentOS7/">Build Jitamin in CentOS7</a><div class="container"><time class="button-hover post-date"><i class="fas fa-calendar-alt article-icon" aria-hidden="true"></i> 更新于 2019-11-18</time><div class="button-hover categories"><i class="fa fa-inbox article-icon" aria-hidden="true"></i><a class="link-a" href="../../categories/Engineering/">Engineering</a></div><div class="button-hover tags"><i class="fa fa-tag article-icon" aria-hidden="true"></i><a class="link-a" href="../../tags/Tools/">Tools</a></div></div><div class="post-content"><div class="main-content content"><p>环境:CentOS7</p>
-<ul>
-<li><strong>安装相关依赖</strong>：<ul>
-<li>安装apache: yum install httpd</li>
-<li>安装php 7:<ul>
-<li>yum -y install epel-release</li>
-<li>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el7/webtatic-release.rpm" target="_blank" rel="noopener">https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</a></li>
-<li>yum install php70w</li>
-<li>查看PHP是否安装成功: php -v</li>
-</ul>
-</li>
-<li>安装Composer:<ul>
-<li>curl -sS <a href="https://getcomposer.org/installer" target="_blank" rel="noopener">https://getcomposer.org/installer</a> | php</li>
-<li>mv composer.phar /usr/local/bin/composer</li>
-<li>检查composer是否安装成功: composer</li>
-</ul>
-</li>
-<li>安装Mysql:<ul>
-<li>wget -i -c <a href="http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm" target="_blank" rel="noopener">http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm</a></li>
-<li>yum -y install mysql57-community-release-el7-10.noarch.rpm</li>
-<li>yum -y install mysql-community-server</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>安装Jitamin</strong>:<ul>
-<li>cd &lt;安装目录&gt;如：cd /usr/local</li>
-<li>下载jitamin: git clone <a href="https://github.com/jitamin/jitamin.git" target="_blank" rel="noopener">https://github.com/jitamin/jitamin.git</a> jitamin</li>
-<li>cd jitamin/</li>
-<li>cp .env.example .env</li>
-<li>配置.env文件:<ul>
-<li>修改DB_HOSTNAME,DB_USERNAME等数据库属性</li>
-</ul>
-</li>
-<li>安装相关依赖:composer install -o –no-dev<ul>
-<li><font color="#FF4500"><strong>可能会遇到一些problem</strong></font>:<ul>
-<li>缺失PHP-gd: yum install php70w-gd</li>
-<li>缺失PHP-mbstring: yum install php70w-mbstring</li>
-<li>缺失PHP-dom: yum install php70w-dom</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>创建数据库表: vendor/bin/phinx migrate</li>
-<li>安装初始数据: vendor/bin/phinx seed:run</li>
-<li>确保bootstrap/cache和storage目录可写:<ul>
-<li>chmod -R 0777 bootstrap/cache</li>
-<li>chmod -R 0777 storage</li>
-</ul>
-</li>
-<li>同步cache:<ul>
-<li>php artisan config:cache</li>
-<li>php artisan route:cache</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>配置web服务器</strong>:</p>
-<ul>
-<li>主要就是配置apache的配置文件</li>
-<li>利用yum安装的apache默认配置文件存放于: /etc/httpd/conf/httpd.conf</li>
-<li>我们要做的就是在/etc/httpd/conf.d目录下新建jitamin.conf内容如下:<pre><code>&lt;VirtualHost *:80&gt;
-DocumentRoot &quot;/usr/local/jitamin/public&quot;
-DirectoryIndex index.php
-&lt;Directory &quot;/usr/local/jitamin/public&quot;&gt;
-  AllowOverride all
-  Options -Indexes +FollowSymLinks +ExecCGI
-  AllowOverride All
-  Order allow,deny
-  Allow from all
-  Require all granted
-&lt;/Directory&gt;
-&lt;/VirtualHost&gt;
-</code></pre><ul>
-<li>最后重启apache即可: service httpd restart</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><font color="#FF4500"><strong>可能会遇到的问题</strong></font></p>
-<ul>
-<li>在创建数据库表和插入数据库数据的时候可能会遇到xxx pdo xxxx相关的问题<ul>
-<li>解决方法<ul>
-<li>yum install php70w-pdo</li>
-<li>yum install php70w-mysql</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>这个时候访问xxx.xxx.xxx.xxx(主机地址)可能会出现500 internal error的问题，查看log会发现是显示PHP无法连接上mysql<ul>
-<li>解决方法<ul>
-<li>grant授权，本机配置时是直接grant all到所有的机器上</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>继续访问还是会出现500的error<ul>
-<li>解决方法<ul>
-<li>最后发现是selinux的问题</li>
-<li>setenforce 0</li>
-<li>setsebool httpd_can_network_connect_db=1</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div></div><a class="button-hover more" href="../../2018/07/19/Build-Jitamin-in-CentOS7/#more">阅读全文</a></div></div><div id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="../2/"><i class="fas fa-angle-left"></i></a><a class="page-number" href="../../">1</a><a class="page-number" href="../2/">2</a><span class="page-number current">3</span><a class="page-number" href="../4/">4</a><a class="extend next" rel="next" href="../4/"><i class="fas fa-angle-right"></i></a></div></div></div></div><div class="button-hover" id="return-top"><i class="fas fa-arrow-up" aria-hidden="true"></i></div><footer><div id="footer"><div class="button-hover" id="side-button"><i class="fas fa-arrow-right"></i></div><div class="right-content"><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv"><i class="fas fa-user"></i></span><span id="busuanzi_value_site_uv"></span><span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i></span><span id="busuanzi_value_site_pv"></span><span></span></div><div class="copyright">&copy;2017 ～ 2019 By Out of Memory</div></div></div></footer></div><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/thirdparty/jquery-3.3.1.min.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/thirdparty/velocity.min.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/thirdparty/jquery.mCustomScrollbar.concat.min.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/fan.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/canvas_bg.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/utils.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/scroll.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/sidebar.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/copy.js"></script><!--script(src=url)--></body></html>
+</div></div><a class="button-hover more" href="../../2018/07/20/Build-Hadoop-Spark-Cluster/#more">阅读全文</a></div></div><div id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="../2/"><i class="fas fa-angle-left"></i></a><a class="page-number" href="../../">1</a><a class="page-number" href="../2/">2</a><span class="page-number current">3</span><a class="page-number" href="../4/">4</a><a class="extend next" rel="next" href="../4/"><i class="fas fa-angle-right"></i></a></div></div></div></div><div class="button-hover" id="return-top"><i class="fas fa-arrow-up" aria-hidden="true"></i></div><footer><div id="footer"><div class="button-hover" id="side-button"><i class="fas fa-arrow-right"></i></div><div class="right-content"><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv"><i class="fas fa-user"></i></span><span id="busuanzi_value_site_uv"></span><span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i></span><span id="busuanzi_value_site_pv"></span><span></span></div><div class="copyright">&copy;2017 ～ 2019 By Out of Memory</div></div></div></footer></div><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/thirdparty/jquery-3.3.1.min.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/thirdparty/velocity.min.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/thirdparty/jquery.mCustomScrollbar.concat.min.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/fan.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/canvas_bg.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/utils.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/scroll.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/sidebar.js"></script><!--script(src=url)--><!--js(src=url_for(url) + '?version=' + version())--><script src="../../js/copy.js"></script><!--script(src=url)--></body></html>
