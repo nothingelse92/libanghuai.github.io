@@ -4,7 +4,7 @@ title: >-
   Networks
 date: 2019-01-20 21:23:54
 tags:
-  - Detection
+  - Basemodel
 ---
 URL: https://arxiv.org/abs/1806.00178
 IGCV3，BMVC2018，在IGCV2基础上进行的改进，主要引入bottleneck的网络结构来改善IGCV2网络的信息交互，从而进一步提高网络效果。

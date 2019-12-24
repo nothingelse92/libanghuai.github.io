@@ -2,7 +2,7 @@
 title: 'IGCV2: Interleaved Structured Sparse Convolutional Neural Networks'
 date: 2019-01-20 21:17:25
 tags:
-  - Detection
+  - Basemodel
 ---
 URL: https://arxiv.org/pdf/1804.06202
 IGCV2, CVPR2018, 主要把IGCV1中提到的group convolution进行了推广，将卷积操作变的更加稀疏，以此来达到减少冗余的目的。

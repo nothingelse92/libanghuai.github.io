@@ -2,8 +2,7 @@
 title: Learning to Track at 100 FPS with Deep Regression Networks
 date: 2019-01-14 22:24:35
 tags:
-  - Track
-  - Detection
+  - Tracking
 ---
 URL:https://arxiv.org/abs/1604.01802
 论文主要提出了GOTURN的tracking框架，整体还是比较naive的一些tracking逻辑，下图是GOTURN整个的pipeline:

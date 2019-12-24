@@ -2,8 +2,7 @@
 title: High Performance Visual Tracking with Siamese Region Proposal Network
 date: 2019-01-15 22:50:13
 tags:
-  - Track
-  - Detection
+  - Tracking
 ---
 URL: http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2951.pdf
 Siamese-RPN, CVPR2018一篇关于tracking的论文，论文所提方法的整个逻辑还是基于孪生网络来做，整体也可以理解为对Siamese-FC结构的改进，下图是Siamese-RPN的整个Pipeline：
