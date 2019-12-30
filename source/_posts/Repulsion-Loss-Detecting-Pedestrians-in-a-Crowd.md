@@ -3,6 +3,7 @@ title: 'Repulsion Loss: Detecting Pedestrians in a Crowd'
 date: 2019-12-08 23:02:20
 tags:
   - Pedestrian Detection
+  - Loss
 ---
 URL：https://zpascal.net/cvpr2018/Wang_Repulsion_Loss_Detecting_CVPR_2018_paper.pdf
 
