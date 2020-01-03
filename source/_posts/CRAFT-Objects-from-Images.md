@@ -2,7 +2,7 @@
 title: CRAFT Objects from Images
 date: 2018-12-14 23:36:43
 tags:
-  - Detection
+  - Object Detection
 ---
 URL:https://arxiv.org/abs/1604.03239
 CVPR2016的一篇论文。首先CRAFT代表 Cascade Region proposal network And FasT-rcnn，本论文主要想解决RPN网络生成的区域不太精确的问题，比如对于一些外观复杂度较低的事物如树木，会因为RPN网络产生的背景区域的存在导致比较难检测或者产生FP，因此作者尝试利用cascade的方式来解决这样的问题。

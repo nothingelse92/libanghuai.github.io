@@ -2,7 +2,7 @@
 title: Spatial Transformer Networks
 date: 2019-04-10 13:21:15
 tags:
-  - Detection
+  - Object Detection
   - Classic
 ---
 URL:https://arxiv.org/pdf/1506.02025.pdf

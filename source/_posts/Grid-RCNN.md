@@ -2,7 +2,7 @@
 title: Grid RCNN
 date: 2019-03-15 13:45:59
 tags:
-  - Detection
+  - Object Detection
 ---
 URL:https://arxiv.org/abs/1811.12030
 CVPR2018的一篇论文，从某种程度上来说是借鉴Bottom Up的方法来优化目前检测方面的一些问题，主要出发点还是希望检测器出的框能尽可能的准，所以相比较一般的检测器直接出四维的坐标信息，Grid RCNN则是出9个点，用9个点的信息来表示一个bbox。

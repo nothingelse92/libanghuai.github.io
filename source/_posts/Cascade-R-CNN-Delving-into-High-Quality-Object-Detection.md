@@ -2,7 +2,7 @@
 title: 'Cascade R-CNN: Delving into High Quality Object Detection'
 date: 2018-09-24 18:16:03
 tags:
-  - Detection
+  - Object Detection
   - Cascade
 ---
 解决问题：

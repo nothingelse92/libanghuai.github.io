@@ -2,7 +2,7 @@
 title: Regionlets for Generic Object Detection
 date: 2019-05-21 13:44:36
 tags:
-  - Detection
+  - Object Detection
 ---
 URL:http://www.xiaoyumu.com/s/PDF/Regionlets.pdf
 这是一个传统的用于物体检测的方法，论文的主要贡献是提出了regionlet的概念以及基于regionlet的物体检测方法论文定义物体检测中有三个范围概念：Bounding Box、Region、Regionlet，Bounding Box就是目标候选框，Region是用于Bounding Box的特征提取，位于Bounding Box内，作者认为Region的粒度过大不足以表示局部的特征，因此在Region内部提出更小的范围Regionlet：

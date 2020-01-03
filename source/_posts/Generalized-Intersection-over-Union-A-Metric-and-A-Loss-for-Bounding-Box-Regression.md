@@ -4,7 +4,7 @@ title: >-
   Regression
 date: 2019-03-03 10:43:07
 tags:
-  - Detection
+  - Object Detection
   - Loss
 ---
 URL：https://arxiv.org/abs/1902.09630

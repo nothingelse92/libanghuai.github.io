@@ -3,7 +3,7 @@ title: Learning non-maximum suppression
 date: 2019-07-08 22:26:30
 tags:
   - NMS
-  - Detection
+  - Object Detection
 ---
 URL:http://openaccess.thecvf.com/content_cvpr_2017/papers/Hosang_Learning_Non-Maximum_Suppression_CVPR_2017_paper.pdf
 

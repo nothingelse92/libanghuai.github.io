@@ -2,7 +2,7 @@
 title: Deep Regionlets for Object Detection
 date: 2019-05-25 13:48:28
 tags:
-  - Detection
+  - Object Detection
 ---
 URL:http://arxiv.org/abs/1712.02408
 论文主要将regionlet的概念引入到CNN网络结构中提出了一个新的物体检测模型，检测模型主要分为两个部分：
