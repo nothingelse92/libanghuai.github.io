@@ -8,7 +8,7 @@ URL: http://openaccess.thecvf.com/content_ECCV_2018/papers/CHUNLUAN_ZHOU_Bi-box_
 
 ECCV2018的一篇行人检测的问题，论文的做法其实比较简单，就是让模型在学习全身框的同时也出可见框的结果，两者可以起到互补的作用，整体模型结构也比较简单就是在backbone之后接两个平行的业务层，一个出可见框的结果一个出全身框的结构，两个平行业务层的结构是一致的，具体的逻辑可以参考论文里的下面这张图：
 
-!(Bi-box-Regression-for-Pedestrian-Detection-and-Occlusion-Estimation-屏幕快照 2019-12-22 下午2.40.42.png)
+![](Bi-box-Regression-for-Pedestrian-Detection-and-Occlusion-Estimation-屏幕快照 2019-12-22 下午2.40.42.png)
 
 那么这篇论文需要注意的更多的是一些细节：
   1. 虽然模型最后是出两个平行的业务层一个出可见框的结果一个出全身框的结果，但是两者的proposal或者anchor是一摸一样的！假设目前对于同一个标注的gt，可见框为Box<sub>visible</sub>,全身框为Box<sub>full body</sub>,那么对于个给定的proposal P, 当IoU(P, Box<sub>full body</sub>) > $\alpha$ && IoB(P, Box<sub>visible</sub>) >  $\beta$ 是P为正样本，否则P就是负样本。

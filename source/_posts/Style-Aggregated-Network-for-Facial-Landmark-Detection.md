@@ -3,6 +3,7 @@ title: Style Aggregated Network for Facial Landmark Detection
 date: 2019-06-01 13:50:45
 tags:
   - Landmark
+  - GAN
 ---
 URL:http://openaccess.thecvf.com/content_cvpr_2018/papers/Dong_Style_Aggregated_Network_CVPR_2018_paper.pdf
 这篇论文主要想解决的问题是不同的图片风格对landmark定位的影响，比如论文中给出的例子对于同一张图片的不同风格（原图、灰度图、以及加入光照的图片）通过嘴部特写可以看到明显的差别。因此论文提出 Style-Aggregated Network (SAN) 整合不同的图片风格来更好的检测人脸lmk.

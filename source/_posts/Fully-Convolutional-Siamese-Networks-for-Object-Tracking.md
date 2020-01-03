@@ -2,8 +2,7 @@
 title: 'Fully-Convolutional Siamese Networks for Object Tracking '
 date: 2019-01-22 16:30:39
 tags:
-  - SOT
-  - Detection
+  - Tracking
 ---
 URL: https://arxiv.org/abs/1606.09549
 Siamese-FC v1 , 利用Siamese网络来做跟踪，论文中把跟踪的任务定义为两个图像patch之间的相似度，通过计算两个图像patch之间的相似度来定位物体，通过多次rescale 输入图片来实现多尺度物体的跟踪。

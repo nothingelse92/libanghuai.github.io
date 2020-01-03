@@ -5,6 +5,7 @@ title: >-
 date: 2019-03-03 10:43:07
 tags:
   - Detection
+  - Loss
 ---
 URL：https://arxiv.org/abs/1902.09630
 这是CVPR2019的一篇论文。本论文主要提出了GIoU的概念来优化IoU在评估或者IoU Loss在训练中的一些问题

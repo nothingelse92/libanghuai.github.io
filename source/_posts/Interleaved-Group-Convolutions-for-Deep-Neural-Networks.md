@@ -2,7 +2,7 @@
 title: Interleaved Group Convolutions for Deep Neural Networks
 date: 2019-01-20 11:11:04
 tags:
-  - Detection
+  - Basemodel
 ---
 URL: https://arxiv.org/abs/1707.02725
 下图是IGCv1的整体示意图：

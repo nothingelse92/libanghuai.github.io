@@ -3,6 +3,7 @@ title: Center Loss - A Discriminative Feature Learning Approach for Deep Face Re
 date: 2018-12-14 23:58:53
 tags:
   - Loss
+  - Classification
 ---
 URL:http://ydwen.github.io/papers/WenECCV16.pdf
 这篇论文主要的贡献就是提出了Center Loss的损失函数，利用Softmax Loss和Center Loss联合来监督训练，在扩大类间差异的同时缩写类内差异，提升模型的鲁棒性。
