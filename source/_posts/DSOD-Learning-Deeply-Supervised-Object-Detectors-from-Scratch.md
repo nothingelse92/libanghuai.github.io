@@ -2,7 +2,7 @@
 title: 'DSOD: Learning Deeply Supervised Object Detectors from Scratch'
 date: 2018-09-21 18:20:04
 tags:
-  - Detection
+  - Object Detection
 ---
 论文主要想解决的问题是如何直接去训练一个detection模型，因为现在detection模型都是利用ImageNet数据预训练的，灵活性相对较差，分类和检测的场景也不一致，因此论文提出了DSOD模型。
 论文中提出的DSOD模型结构通过下表可以直观的看到，Stem、Dense Block、Transition Layer都是参考现有的研究成果，论文主要的贡献是

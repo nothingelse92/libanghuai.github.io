@@ -13,6 +13,6 @@ primary group convolutions的输入首先会被分成L个partition，每个parti
 ![](Interleaved-Group-Convolutions-for-Deep-Neural-Networks-f1ed32b809c7dda6f6c1b5a8834e594e6c0b99ce.png)
 除了IGC主要的逻辑以外论文中也花了比较多的篇幅在论文，IGC比常规的conv操作在同等参数量的情况下宽度更宽，论证比较简单具体可以参考论文，同时作者也通过实验证明了更宽的网络可以得到更好的结果：
 ![](Interleaved-Group-Convolutions-for-Deep-Neural-Networks-9a13e111aef4563a2957a372c32d4f8136975302.png)
-## Experiments
+
 最后的一组实验结果
 ![](Interleaved-Group-Convolutions-for-Deep-Neural-Networks-e51af6de7667412d2511a7cfb8d8d61c3d045247.png)

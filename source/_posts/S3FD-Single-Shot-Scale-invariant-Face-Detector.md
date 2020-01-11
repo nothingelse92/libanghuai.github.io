@@ -2,7 +2,7 @@
 title: 'S3FD: Single Shot Scale-invariant Face Detector'
 date: 2019-02-28 20:18:26
 tags:
-  - Detection
+  - Object Detection
 ---
 URL: http://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_S3FD_Single_Shot_ICCV_2017_paper.pdf
 ICCV2017的一篇论文，主要研究小人脸的检测，作者针对目前基于anchor的检测器对小人脸表现不好的现象分析了几个可能的原因，并针对性的提出了具体的解决方法，比如新的anchor匹配策略、max out backgroud label等方法。

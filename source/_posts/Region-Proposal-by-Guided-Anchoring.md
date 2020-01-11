@@ -2,7 +2,7 @@
 title: Region Proposal by Guided Anchoring
 date: 2019-03-18 21:59:46
 tags:
-  - Detection
+  - Object Detection
 ---
 URL:https://arxiv.org/abs/1901.03278
 CVPR2019的一篇对anchor进行优化的论文，主要将原来需要预先定义的anchor改成直接end2end学习anchor位置和size。首先anchor的定义通常为(x, y, w, h) (x, y为中心点)，formulate一下：

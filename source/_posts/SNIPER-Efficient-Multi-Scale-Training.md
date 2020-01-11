@@ -2,7 +2,7 @@
 title: 'SNIPER: Efficient Multi-Scale Training'
 date: 2018-10-22 22:43:00
 tags:
-  - Detection
+  - Object Detection
 ---
 URL: https://arxiv.org/abs/1805.09300 Github: https://github.com/MahyarNajibi/SNIPER
 **【Summary】**算是在SNIP版本上的改进吧，主要想优化multi scale训练的效率问题。论文提出了chip的概念，其实就是原图中的某一块区域，在本论文中chip的大小就是512 x 512的矩形方块。网络的输入不再是原图，而是这些生成的chip。SNIPER的主要内容就是这些chip的生成逻辑。

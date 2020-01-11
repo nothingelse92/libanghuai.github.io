@@ -2,7 +2,7 @@
 title: 'SSD: Single Shot MultiBox Detector'
 date: 2019-02-03 22:09:53
 tags:
-  - Detection
+  - Object Detection
   - Classic
 ---
 URL: https://arxiv.org/pdf/1512.02325.pdf

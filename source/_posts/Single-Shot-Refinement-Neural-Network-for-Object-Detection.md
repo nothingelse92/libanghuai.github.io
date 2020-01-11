@@ -2,7 +2,7 @@
 title: Single-Shot Refinement Neural Network for Object Detection
 date: 2018-09-24 18:10:10
 tags:
-    - Detection
+  - Object Detection
 ---
 论文致力于研究整合two-stage检测器和one-stage检测器的优点提出了RefineDet网络结构。
 

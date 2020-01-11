@@ -2,7 +2,7 @@
 title: 'CoupleNet: Coupling Global Structure with Local Parts for Object Detection'
 date: 2018-09-24 18:05:22
 tags:
-    - Detection
+    - Object Detection
 ---
 R-FCN将RoI划分成区域通过整合各个区域的信息来表征最后的结果，而CoupleNet的motivation是利用R-FCN中对局部信息的学习能力再整合全局和context信息来提升模型的检测效果。
 

@@ -12,6 +12,7 @@ URL:http://openaccess.thecvf.com/content_iccv_2015/papers/Dosovitskiy_FlowNet_Le
 3.  两个模型在最后阶段都会涉及到refinement，refinement部分主要通过upconvolutional 操作来扩展feature map，只是每一层的输入除了上一层的feature map之外还会结合特征抽取部分相同size的feature map，这样在考虑High-Level特征信息的同时也会考虑局部的相关信息。
 ![](Flownet-Learning-optical-flow-with-convolutional-networks-image002.png)
 ![](Flownet-Learning-optical-flow-with-convolutional-networks-image003.png)
+
 数据方面因为没有足够的训练数据，作者构造了Flying Chairs数据集，图片背景来自Flickr，前景为3D椅子模型。
 ![](Flownet-Learning-optical-flow-with-convolutional-networks-image004.png)
 最后的效果图：

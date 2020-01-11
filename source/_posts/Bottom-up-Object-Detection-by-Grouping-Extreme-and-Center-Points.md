@@ -3,7 +3,7 @@ title: Bottom-up Object Detection by Grouping Extreme and Center Points
 date: 2019-03-02 11:04:25
 tags:
   - BottomUp
-  - Detection
+  - Object Detection
 ---
 URL:https://arxiv.org/pdf/1901.08043.pdf
 Codebase:https://github.com/xingyizhou/ExtremeNet
