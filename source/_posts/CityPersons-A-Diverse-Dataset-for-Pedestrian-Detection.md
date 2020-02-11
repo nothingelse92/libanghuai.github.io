@@ -15,3 +15,5 @@ URL:https://arxiv.org/abs/1702.05693
 数据集划分：
 
 ![](CityPersons-A-Diverse-Dataset-for-Pedestrian-Detection-屏幕快照 2020-01-21 下午3.43.44.png)
+
+那么在后续的论文中其实我们还会比较常见Heavy，Bare，Partial这样的划分，这个划分是Repulsion Loss那篇论文中根据CityPersons的Reseanable子集继续细分出来的，具体的可以参考Repulsion Loss这篇论文，主要是根据遮挡程度来划分的。
