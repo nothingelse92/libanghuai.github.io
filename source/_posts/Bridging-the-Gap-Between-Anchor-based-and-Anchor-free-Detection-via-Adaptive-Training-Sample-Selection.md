@@ -25,7 +25,7 @@ Label Assign另一篇比较有代表性的工作, 论文主要想探究Anchor-ba
 然后就是论文的核心ATSS(Adaptive Training Sample Selection)策略了,解决*how to define positive and negative training samples*的问题.
 具体怎么做呢：
 1. 对于给定的gt框，在FPN的每一个layer上找Top K个离gt框中心最近的anchor box(距离的话就用两个框中心点的L2距离衡量)作为正样本，那么假设FPN有L个layer那么对于一个gt框就有L x K个postive正样本。
-2. 然后计算L x K个正样本anchor与gt框的IOU，统计出均值和标注差m和v，那么由此计算出给定gt框的IOU阈值为t = m + v. 那么最后就选择IoU大于等于t的作为正样本其余作为负样本。
+2. 然后计算L x K个正样本anchor与gt框的IOU，统计出均值和标注差m和v，那么由此计算出给定gt框的IOU阈值为t = m + v. 那么最后就选择IoU大于等于t的作为正样本其余作为负样本。均值m可以控制某个layer anchor的质量，那么当然大于均值的anchor要更好了，v控制gt更加适合哪个layer。
 3. 在实际使用的时候(论文中的伪代码)限制选中的anchor box的中心点需要在gt框内部
 4. 如果一个anchor框可以和多个gt框匹配那么就去IOU最大的
 
