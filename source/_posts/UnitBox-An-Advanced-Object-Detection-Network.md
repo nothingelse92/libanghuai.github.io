@@ -2,9 +2,7 @@
 title: 'UnitBox: An Advanced Object Detection Network'
 date: 2018-07-22 23:50:29
 tags:
-- Detection
-categories:
-- Paper Reading
+  - Object Detection
 ---
 You can find this paper [here](https://arxiv.org/pdf/1608.01471.pdf)
 # Two Main Contributions:
@@ -17,4 +15,3 @@ You can find this paper [here](https://arxiv.org/pdf/1608.01471.pdf)
 ![IoU Loss](UnitBox-An-Advanced-Object-Detection-Network/IoU_Loss.png)
 ## - UnitBox Network Structure
 ![IoU Loss](UnitBox-An-Advanced-Object-Detection-Network/UnitBox.png)
-

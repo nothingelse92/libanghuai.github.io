@@ -3,7 +3,7 @@ title: Robust Face Detection via Learning Small Faces on Hard Images
 date: 2018-12-19 23:45:19
 tags:
   - Face
-  - Detection
+  - Object Detection
 ---
 URL: https://arxiv.org/pdf/1811.11662.pdf
 论文主要是想解决人脸检测中的小脸问题，论文的motivation其实和SNIP很像，让网络去学习一个相对固定的scale，比如在本论文中anchor大小被设置为固定的16x16，32x32，64x64三个。论文主要的内容有两个部分，一部分是提出来的检测网络，另一部分就是hard image mining。

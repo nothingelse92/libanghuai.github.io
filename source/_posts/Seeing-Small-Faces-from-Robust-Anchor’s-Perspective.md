@@ -2,7 +2,7 @@
 title: Seeing Small Faces from Robust Anchor’s Perspective
 date: 2019-06-05 13:57:06
 tags:
-  - Detection
+  - Object Detection
 ---
 URL:https://arxiv.org/pdf/1802.09058.pdf
 这篇论文是关于anchor的设计，论文提出了一些anchor设计的策略来检测小脸。下图(a)是作者统计的传统基于anchor的模型在不同人脸大小下的recall，下图(b)则是作者将所有的人脸按大小分组，然后计算每一个组里每张人脸与anchor的最大IoU，对group中所有的max IoU取均值就是图(b)的average IoU。通过统计分析作者认为之所以对于小脸recall比较低的情况是因为小脸和初始化的anchor IoU较小，因此论文提出EMO Score来评估gt和anchor之间的联系并提出了一些anchor设计的策略。

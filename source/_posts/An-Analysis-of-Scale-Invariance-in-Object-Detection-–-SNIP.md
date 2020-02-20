@@ -2,7 +2,7 @@
 title: An Analysis of Scale Invariance in Object Detection – SNIP
 date: 2018-12-04 20:36:19
 tags:
-    - Detection
+    - Object Detection
 ---
 URL: https://arxiv.org/abs/1711.08189
 **【Summary】**CVPR2018的一篇Oral，主要在研究scale invariance或者说是domain shift的问题，论文所提出的SNIP方法不同于multi scale的逻辑，可以理解为把网络输入的物体norm到一个相对固定的scale，inference的时候也做同样的策略，这样可以避免训练和测试数据集的scale invariance的问题。

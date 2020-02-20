@@ -2,7 +2,7 @@
 title: Face R-CNN
 date: 2018-11-14 23:40:24
 tags:
-  - Detection
+  - Object Detection
   - Face
 ---
 URL:https://arxiv.org/abs/1706.01061

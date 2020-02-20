@@ -2,6 +2,7 @@
 title: Build Hadoop && Spark Cluster
 date: 2018-07-20 22:39:24
 tags:
+  - Tools
 ---
 单机配置
 * 创建用户和用户组

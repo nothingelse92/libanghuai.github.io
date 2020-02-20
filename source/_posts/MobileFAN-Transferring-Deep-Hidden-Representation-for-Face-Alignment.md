@@ -8,7 +8,7 @@ tags:
 ---
 URL: https://arxiv.org/abs/1908.03839
 
-一篇人脸关键点的论文,论文的核心应该是模型蒸馏，但是单纯的基于mobilenetv2网络在多个benchmark也刷了挺不错的点，甚至是好于CVPR2018的LAB，MobileFAN就是mobilenetv2加上出heatmap直接出出来的结果，MobileFAN + KD就是加上只是蒸馏的结果，下表是WFLW上面的点,坦白讲点还是很高的：
+一篇人脸关键点的论文,论文的核心应该是模型蒸馏，但是单纯的基于mobilenetv2网络在多个benchmark也刷了挺不错的点，甚至是好于CVPR2018的LAB，MobileFAN就是mobilenetv2加上出heatmap直接出出来的结果，MobileFAN + KD就是加上知识蒸馏的结果，下表是WFLW上面的点,坦白讲点还是很高的：
 ![](MobileFAN-Transferring-Deep-Hidden-Representation-for-Face-Alignment-屏幕快照 2019-08-16 下午6.41.34.png)
 知识蒸馏方面论文中提了两个方面：
 一是**Feature-Aligned Distillation**，出发点是希望teacher和student网络学习的分布是一致的，两个网络deconv层的spatial维度是一致的差别就在于channel不一致，作者简单的用1x1把两者拉统一，Feature-Aligned Distillation和之前用大模型带小模型的做法基本是一致的，学习的时候直接mse监督两个feature map。

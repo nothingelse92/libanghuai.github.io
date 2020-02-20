@@ -2,7 +2,7 @@
 title: 'R-FCN: Object Detection via Region-based Fully Convolutional Networks'
 date: 2018-09-01 17:21:35
 tags:
-    - Detection
+    - Object Detection
 ---
 URL:https://arxiv.org/abs/1605.06409 Github:https://github.com/daijifeng001/r-fcn
 R-FCN网络设计的motivation是为了增强物体检测网络位置敏感性，提高物体检测的精度和速度。它的整体结构是一个two stage的网络，RPN网络分支生成Proposal Candidate RoIs ，另一个分支基于此做进一步的refine。

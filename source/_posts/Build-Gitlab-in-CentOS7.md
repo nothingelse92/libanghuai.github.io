@@ -2,9 +2,7 @@
 title: Build Gitlab in CentOS7
 date: 2018-07-19 22:56:50
 tags:
-- Tools
-categories:
-- Engineering
+  - Tools
 ---
 ## 预配置相关环境
 ```
