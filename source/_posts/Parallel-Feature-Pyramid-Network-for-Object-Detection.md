@@ -2,7 +2,7 @@
 title: 'Parallel Feature Pyramid Network for Object Detection'
 date: 2018-12-11 23:26:06
 tags:
-  - Detection
+  - Object Detection
 ---
 URL:https://arxiv.org/abs/1612.03144
 ECCV2018的一篇论文,这篇论文从某种程度上来说是为了解决小物体检测的问题，作者从feature map特征表示好坏的角度来分析目前常用检测模型的一些不足。论文分别可视化SSD、FPN、PFPNET（本文所提模型）对同样输入图片的feature map，从图中可以看出来SSD对物体的轮廓细节描述比较差，FPN对于一些遮挡物体的特征表示比较差。PFPNET则相对好一些，至于为什么好，以及这个结构设计的理由论文貌似并没有解释。

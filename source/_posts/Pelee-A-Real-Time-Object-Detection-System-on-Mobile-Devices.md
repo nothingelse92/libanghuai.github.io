@@ -1,8 +1,6 @@
 title: 'Pelee: A Real-Time Object Detection System on Mobile Devices'
 tags:
-  - Detection
-categories:
-  - Paper Reading
+  - Object Detection
 author: libanghuai
 date: 2018-09-25 20:05:00
 ---

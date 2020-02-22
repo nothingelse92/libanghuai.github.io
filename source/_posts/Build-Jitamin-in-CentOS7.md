@@ -2,9 +2,7 @@
 title: Build Jitamin in CentOS7
 date: 2018-07-19 22:59:30
 tags:
-- Tools
-categories:
-- Engineering
+  - Tools
 ---
 环境:CentOS7
 * **安装相关依赖**：
@@ -59,7 +57,7 @@ categories:
         Require all granted
     </Directory>
     </VirtualHost>
-``` 
+```
      * 最后重启apache即可: service httpd restart
 
 * <font color=#FF4500>**可能会遇到的问题**</font>

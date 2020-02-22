@@ -4,8 +4,8 @@ title: >-
   Networks
 date: 2018-12-19 23:53:33
 tags:
-  - Detection
   - Regularization
+  - Basemodel
 ---
 URL: https://arxiv.org/abs/1811.06783
 论文主要提出了一种新的Regularization方法DropFilter，主要是对卷积核进行抑制，具体实现的时候也比较简单，只要对卷积核和bias生成对应的0 - 1mask(Bernoulli分布),然后对应和kernel相乘即可：

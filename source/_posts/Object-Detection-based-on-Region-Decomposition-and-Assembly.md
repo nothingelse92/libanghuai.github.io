@@ -2,7 +2,7 @@
 title: Object Detection based on Region Decomposition and Assembly
 date: 2019-03-25 14:25:39
 tags:
-  - Detection
+  - Object Detection
 ---
 URL: https://arxiv.org/abs/1901.08225
 AAAI2019的一篇关于检测的论文，论文主要的出发点是想解决遮挡场景下的物体检测问题，整个逻辑基于Faster RCNN的框架来做，主要思路是先把proposal分part分别来提取特征然后再通过一定的方法将其merge到一起来突出可见部分的特征，从而得到更可信的信息。
