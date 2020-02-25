@@ -30,3 +30,7 @@ Label Assign另一篇比较有代表性的工作, 论文主要想探究Anchor-ba
 4. 如果一个anchor框可以和多个gt框匹配那么就去IOU最大的
 
 至于atss的解释论文给了比较多的阐述，实际也是FCOS做法的insight。最后点上面还是可以的。
+
+具体算法的执行步骤论文中给的伪代码看上去会更加直接:
+
+![](Bridging-the-Gap-Between-Anchor-based-and-Anchor-free-Detection-via-Adaptive-Training-Sample-Selection-屏幕快照 2020-02-20 上午11.44.01.png)
