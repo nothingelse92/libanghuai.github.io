@@ -18,4 +18,4 @@ ICCV 2019的一篇论文, 做few shot detection，论文主要的贡献点是提
 然后论文似乎主要的内容就都在这了，需要说明的几点：
 1. **meta extractor**和**prediction module**虽然论文是分开说的，但应该是一体的，reweight参数修饰的feature map应该是backbone的输出，prediction module更多应该代表head部分，整个模型是基于yolov2的
 2. **reweight module**的输入是roi，也好理解毕竟是要突出具体的object，论文的做法是在rgb3个channel之上再append一个mask channel，有目标target的地方值为1其他地方值为0，在ablation里面还是解释一下直接抠图然后再append到原图和用mask这样做的差别，点上要高一点
-3. 论文里面还特意提了一句**reweight module**在inference的时候可以干掉，原因是如果我知道我将要检测哪个类比数据，我只要把k个sample直接喂进去对weight vector取平均作为最后的weight vector，然后再inference，这个不要理解错，实际上这玩意还是去不掉的，本质和se没看到啥差别。
+3. 论文里面还特意提了一句**reweight module**在inference的时候可以干掉，原因是如果我知道我将要检测哪个类别的数据，我只要把k个sample直接喂进去对weight vector取平均作为最后的weight vector，然后再inference，这个不要理解错，实际上这玩意还是去不掉的，本质和se没看到啥差别。
