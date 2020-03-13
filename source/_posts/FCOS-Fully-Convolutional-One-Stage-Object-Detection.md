@@ -15,8 +15,7 @@ FCOS的具体想法呢是这样的，基于FPN的结构，P3 - P7得到的featur
 
 几个需要注意的点:
 1. gt的生成，对于feature map上的某个pixel (x, y), 如果(x, y) 映射到原图的点(x<sup>'</sup>, y<sup>'</sup>)落在了某个gt框里，那么对应的offset就算(x<sup>'</sup>, y<sup>'</sup>)到gt框四条边的offset，分类gt也就沿用这个gt框的class标注。
-2. FPN的好处一是可以fuse feature另外一个不同的layer可以针对性的回归不同scale的框，那么在FCOS中这部分是怎么做的呢，论文将P3 - P7 5个FPN层用6个值进行区间划分 ，论文中是用的区间m = [0, 64, 128, 256, 512 , ∞]，对于一个gt: (l<sup>∗</sup>, t<sup>∗</sup>, r<sup>∗</sup> ,b<sup>∗</sup>),如果满足
-max(l<sup>∗</sup>, t<sup>∗</sup>, r<sup>∗</sup> ,b<sup>∗</sup>) > m<sub>i</sub> or max(l<sup>∗</sup>, t<sup>∗</sup>, r<sup>∗</sup> ,b<sup>∗</sup>) < m<sub>i - 1</sub>，那么P<sub>3 + i</sub>就会将这个gt视为negative sample，这层不负责回归这个gt框。这么做其实会有一个问题，对于靠近gt框边缘的点有可能会落到其他layer上(也就是一个gt框内所有的pixel不一定都在一个layer里)这其实在某种程度上违背了FPN的初衷，只是在具体的实现的时候似乎可以卡中心的一些ratio来人为的干掉边缘pixel。
+2. FPN的好处一是可以fuse feature另外一个不同的layer可以针对性的回归不同scale的框，那么在FCOS中这部分是怎么做的呢，论文将P3 - P7 5个FPN层用6个值进行区间划分 ，论文中是用的区间m = [0, 64, 128, 256, 512 , ∞]，对于一个gt: (l<sup>∗</sup>, t<sup>∗</sup>, r<sup>∗</sup> ,b<sup>∗</sup>),如果满足max(l<sup>∗</sup>, t<sup>∗</sup>, r<sup>∗</sup> ,b<sup>∗</sup>) > m<sub>i</sub> or max(l<sup>∗</sup>, t<sup>∗</sup>, r<sup>∗</sup> ,b<sup>∗</sup>) < m<sub>i - 1</sub>，那么P<sub>3 + i</sub>就会将这个gt视为negative sample，这层不负责回归这个gt框。这么做其实会有一个问题，对于靠近gt框边缘的点有可能会落到其他layer上(也就是一个gt框内所有的pixel不一定都在一个layer里)这其实在某种程度上违背了FPN的初衷，只是在具体的实现的时候似乎可以卡中心的一些ratio来人为的干掉边缘pixel。
 3. FPN另一个好处可以缓解一个pixel对目标回归的不确定性，比如下图，手拿网球拍的运动员，小的蓝色框的大部分pixel同时也落在来橙色的人体框中，这就导致一个问题，这些overlap的pixel具体需要负责去回归哪个框，通过FPN上述的分层处理可以大大缓解这个问题，论文的ablation里是有具体的数据的，感兴趣的同学可以参考原论文，那么假设在这样的情况下还是有少数不确定的pixel，那么这些pixel就负责回顾最小的那个框！
 
 ![](FCOS-Fully-Convolutional-One-Stage-Object-Detection-屏幕快照 2020-01-03 下午10.04.06.png)
