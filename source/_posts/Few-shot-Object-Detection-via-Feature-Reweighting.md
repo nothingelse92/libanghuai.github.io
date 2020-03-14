@@ -13,7 +13,7 @@ ICCV 2019的一篇论文, 做few shot detection，论文主要的贡献点是提
 
 那么接下来让我们看看这些模块以及最后的模型具体是怎么训练的，怎么work的，整个学习过程分为两个阶段:
 1. *base training*, 用比较丰富的训练数据(base set)去学习比较好的meta extractor/reweight module/prediction module
-2. *few-shot fine-tuning*，用base set和novel set去一起学习，由于novel class的训练数据很少所以为了数据均衡，base class训练的时候采样和novel class保持一致，然后剩下来的过程就是*base training*阶段的就一摸一样了，只是训练时间会短很多。
+2. *few-shot fine-tuning*，用base set和novel set去一起学习，由于novel class的训练数据很少所以为了数据均衡，base class训练的时候采样和novel class保持一致，然后剩下来的过程就是*base training*阶段的就一摸一样了，只是训练时间会短很多。其实就是fine tune了。
 
 然后论文似乎主要的内容就都在这了，需要说明的几点：
 1. **meta extractor**和**prediction module**虽然论文是分开说的，但应该是一体的，reweight参数修饰的feature map应该是backbone的输出，prediction module更多应该代表head部分，整个模型是基于yolov2的

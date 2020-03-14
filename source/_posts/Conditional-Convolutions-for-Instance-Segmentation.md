@@ -2,7 +2,7 @@
 title: Conditional Convolutions for Instance Segmentation
 date: 2020-03-13 14:39:58
 tags:
-  -- Segmentation
+  - Segmentation
 ---
 URL: https://arxiv.org/pdf/2003.05664.pdf
 
