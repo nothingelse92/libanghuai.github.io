@@ -7,7 +7,7 @@ tags:
 ---
 URL: http://openaccess.thecvf.com/content_cvpr_2018/papers_backup/Sung_Learning_to_Compare_CVPR_2018_paper.pdf
 
-CVPR2018的论文，整体pipeline很简单，做法也比较make sense，感觉比较不错的一篇论文，论文解决few shot的出发点是构建test image和support image之间的关系来给test image赋label。
+CVPR2018的论文，整体pipeline很简单，做法也比较make sense，感觉比较不错的一篇论文，论文解决few shot的出发点是构建test image和support image之间的关系来给test image赋label。本质上和那些基于最近邻的逻辑是一样的，只是它把这个compare的过程放到网络里显式的去学习了。
 
 
 ![](Learning-to-Compare-Relation-Network-for-Few-Shot-
