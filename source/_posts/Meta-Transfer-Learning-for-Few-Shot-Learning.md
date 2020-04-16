@@ -21,6 +21,8 @@ MAML一族的解决few shot learning的问题，对MAML的基本做法也做了�
 
     ![](Meta-Transfer-Learning-for-Few-Shot-Learning-屏幕快照 2020-04-16 下午3.21.15.png)
 
+    当前这种考虑我的第一反应是SKNet之类对Kernel进行attention的方法感觉有点类似
+
 4. HT Meta Batch: hide mining, 在每个meta test任务上选择acc最低的类别，然后把这些数据或者这些数据对应的类别拿出来再重点refine
 5. 最后在meta test阶段fix住SS只在noval class上fine tune base learner.
 
