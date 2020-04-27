@@ -21,7 +21,7 @@ W<sub>yi</sub><sup>T</sup> * x<sub>i</sub> = ||W<sub>j</sub>|| ||x<sub>i</sub>||
 
 那么Large-Margin Softmax Loss提出了和SVM类似的分类平面的问题，它希望inter-class之间的margin可以大一些，所以在Softmax Loss的基础上引入一个变量m来控制分类平面的margin.
 
-在原始的Softmax Loss中针对一个二分类问题，假设样本x属于类别1，那么我们希望||W<sub>1</sub>|| ||x|| cos(θ<sub>1</sub>) > ||W<sub>2</sub>|| ||x|| cos(θ<sub>2</sub>), (cosine在[0,π]区间内是一个单调递减的函数)，那么在Large-Margin Softmax Loss上就转化成||W<sub>1</sub>|| ||x|| cos(mθ<sub>1</sub>) > ||W<sub>2</sub>|| ||x|| cos(θ<sub>2</sub>)，所以Large-Margin Softmax Loss：
+在原始的Softmax Loss中针对一个二分类问题，假设样本x属于类别1，那么我们希望||W<sub>1</sub>|| ||x|| cos(θ<sub>1</sub>) > ||W<sub>2</sub>|| ||x|| cos(θ<sub>2</sub>), (cosine在[0,π]区间内是一个单调递减的函数，同时指数函数还是一个单调递增的函数)，那么在Large-Margin Softmax Loss上就转化成||W<sub>1</sub>|| ||x|| cos(mθ<sub>1</sub>) > ||W<sub>2</sub>|| ||x|| cos(θ<sub>2</sub>)，所以Large-Margin Softmax Loss：
 
 ![](Large-Margin-Softmax-Loss-for-Convolutional-Neural-Networks-屏幕快照 2020-04-19 下午8.06.10.png)
 

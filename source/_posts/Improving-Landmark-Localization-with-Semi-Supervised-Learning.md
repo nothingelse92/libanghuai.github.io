@@ -3,6 +3,7 @@ title: Improving Landmark Localization with Semi-Supervised Learning
 date: 2019-06-10 13:56:47
 tags:
   - Landmark
+  - Semi-Supervised
 ---
 URL:https://arxiv.org/abs/1709.01591?context=cs
 这篇论文是关于landmark检测的，作者认为目前公开的数据集中标注landmark终究量比较少，但是标注属性（比如分类）的数据集实际上有很多，因此本论文提出半监督的神经网络模型结合标注landmark的数据集和标注属性的数据集来提高landmark定位的准确性。
