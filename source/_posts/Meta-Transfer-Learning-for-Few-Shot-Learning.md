@@ -8,7 +8,7 @@ tags:
 ---
 URL: https://arxiv.org/pdf/1812.02391.pdf
 
-MAML一族的解决few shot learning的问题，对MAML的基本做法也做了比较详细的了解，论文所提的方法有两大主要内容:
+MAML一族的解决few shot learning的问题，对MAML的基本做法也做了比较详细的了解，论文的motivation呢是解决目前神网络在few shot任务下容易过拟合的问题，所以在fix backbone的基础上学了一个比较轻量的scale/shift网络来meta learning. 论文所提的方法有两大主要内容:
 1. Meta-Transfer Learning (MTL), 方法主要的Pipeline
 2. Hard Task (HT) Meta-Batch, meta learning形式下的hard mining，做法比较简单粗暴
 
