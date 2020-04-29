@@ -16,7 +16,7 @@ URL: https://arxiv.org/pdf/2002.07662.pdf
 ![](FeatureNMS-Non-Maximum-Suppression-by-Learning-Feature-Embeddings-屏幕快照 2020-04-18 下午5.41.28.png)
 ![](FeatureNMS-Non-Maximum-Suppression-by-Learning-Feature-Embeddings-屏幕快照 2020-04-18 下午5.41.56.png)
 
-f<sub>i</sub>和f<sub>j</sub>是两个不同的anchor对应的embeding feature，至于obj(i)就是用来判断anchor<sub>i</sub>属于哪一个object(gt box).
+f<sub>i</sub>和f<sub>j</sub>是两个不同的anchor对应的embeding feature，至于obj(i)就是用来判断anchor<sub>i</sub>属于哪一个object(gt box). NMS距离计算方面就是普通的L2.
 
 β 和 α为两个超参数 : *α determines the margin between positive and negative examples, and the parameter β determines the decision threshold. (α = 0.2,β = 1.0)*
 
