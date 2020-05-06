@@ -20,10 +20,10 @@ FCOS的具体想法呢是这样的，基于FPN的结构，P3 - P7得到的featur
 
 ![](FCOS-Fully-Convolutional-One-Stage-Object-Detection-屏幕快照 2020-01-03 下午10.04.06.png)
 
-论文的最后一段另外还提出了center-ness loss的概念，主要是想解决在具体实验中发现的FCOS会产生大量低质量的框环绕在gt周围（应该都是gt的边缘pixel产生的），因此提出了center-ness loss的概念：
+通过上面的各种优化之后作者发现FCOS相比较anchor based的方法指标上还是有差距，问题主要是一些低质量的框环绕在gt周围（应该都是gt的边缘pixel产生的),那么为了解决这个问题，作者在cls和reg分支的基础上平行的增加了一个centerness分支，用来预测当前location(anchor point)想较gt中心的距离，centerness的gt定义如下：
 
 ![](FCOS-Fully-Convolutional-One-Stage-Object-Detection-截屏2020-01-1200.31.54.png)
 
-我们来看一下这个loss，l<sup>\*</sup>和r<sup>\*</sup>，t<sup>\*</sup>和b<sup>\*</sup>是两对相互关联的变量，如果某个pixel越靠近中心点(center)那么这两对值就会越接近，那么center-ness loss就会越趋向于1，如果某个pixel越远离中心点(center)，那么center-ness loss就会越趋向于0.所以可以理解为center-ness是一个度量离中心点越近的单位，inference的时候这个center-ness分支的结果会加权于score从而约束了偏离中心点的pixel，也抑制了大量低质量的框。
+我们来看一下这个表达式，l<sup>\*</sup>和r<sup>\*</sup>，t<sup>\*</sup>和b<sup>\*</sup>是两对相互关联的变量，如果某个pixel越靠近中心点(center)那么这两对值就会越接近，那么center-ness值就会越趋向于1，如果某个pixel越远离中心点(center)，那么center-ness就会越趋向于0.所以可以理解为center-ness是一个度量离中心点越近的单位，inference的时候这个center-ness分支的结果会加权于score从而约束了偏离中心点的pixel，也抑制了大量低质量的框。因为上述的公式将centerness的值约束到了(0,1)范围内，所以最后centerness分支的学习就是用的binary cross entropy (BCE) Loss.
 
 论文整体的内容应该就这些了，FCOS对后续的anchor free做法还是很有启发意义的。

@@ -8,7 +8,7 @@ tags:
 ---
 URL: https://arxiv.org/pdf/1812.02391.pdf
 
-MAML一族的解决few shot learning的问题，对MAML的基本做法也做了比较详细的了解，论文所提的方法有两大主要内容:
+MAML一族的解决few shot learning的问题，对MAML的基本做法也做了比较详细的了解，论文核心想要解决的问题是目前常规Few Shot任务在深层网络容易过拟合，所以无法体现深层网络的优势，作者论文所提方法就对backbone也做了一定的考虑，论文所提的方法有两大主要内容:
 1. Meta-Transfer Learning (MTL), 方法主要的Pipeline
 2. Hard Task (HT) Meta-Batch, meta learning形式下的hard mining，做法比较简单粗暴
 
