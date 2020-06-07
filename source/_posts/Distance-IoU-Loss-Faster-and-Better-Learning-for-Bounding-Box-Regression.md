@@ -23,7 +23,7 @@ AAAI 2020的一篇论文，算是对IoU系列的一个总结同时提出了新�
 
     b. GIoU对于包含关系的两个框无法处理，因为会退化到IoU的情况，比如下图，这种情况是不合理的:
 
-    ![(Distance-IoU-Loss-Faster-and-Better-Learning-for-Bounding-Box-Regression-屏幕快照 2020-05-24 下午1.30.22.png)
+    ![](Distance-IoU-Loss-Faster-and-Better-Learning-for-Bounding-Box-Regression-屏幕快照 2020-05-24 下午1.30.22.png)
 
 所以作者在论文里提出了DIoU来处理GIoU的缺点，解法也很简单，引入两个框中心点之间的距离来处理GIoU的缺点, b代表框的中心点，c代表最小外接矩形的对角线长度，ρ就代表欧式距离:
 
